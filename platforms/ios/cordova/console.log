@@ -1,0 +1,59 @@
+2014-03-17 16:20:18.723 HelloWorld[12066:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-17 16:20:18.993 HelloWorld[12066:90b] Resetting plugins due to page load.
+2014-03-17 16:20:19.083 HelloWorld[12066:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECE18639-8BB9-41CE-A066-C358D5492826/HelloWorld.app/www/index.html
+2014-03-17 16:29:08.780 HelloWorld[12519:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-17 16:29:08.895 HelloWorld[12519:90b] Resetting plugins due to page load.
+2014-03-17 16:29:08.947 HelloWorld[12519:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/02FA9B35-C12E-42E2-91F1-F340815AE956/HelloWorld.app/www/index.html
+2014-03-17 19:57:20.855 HelloWorld[17720:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-17 19:57:21.025 HelloWorld[17720:90b] Resetting plugins due to page load.
+2014-03-17 19:57:21.132 HelloWorld[17720:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/02FA9B35-C12E-42E2-91F1-F340815AE956/HelloWorld.app/www/index.html
+2014-03-17 19:57:24.850 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:24.851 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:24.852 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:27.911 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:27.912 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:27.913 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:29.921 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:29.922 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:29.923 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:32.007 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:32.008 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:32.008 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:33.712 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:33.713 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:33.714 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:35.453 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:35.454 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 19:57:35.455 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:10:15.103 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:10:15.104 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:10:15.104 HelloWorld[17720:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:16:10.022 HelloWorld[18126:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-17 20:16:10.081 HelloWorld[18126:90b] Resetting plugins due to page load.
+2014-03-17 20:16:10.146 HelloWorld[18126:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/02FA9B35-C12E-42E2-91F1-F340815AE956/HelloWorld.app/www/index.html
+2014-03-17 20:33:54.659 HelloWorld[19258:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-17 20:33:54.781 HelloWorld[19258:90b] Resetting plugins due to page load.
+2014-03-17 20:33:54.859 HelloWorld[19258:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/02FA9B35-C12E-42E2-91F1-F340815AE956/HelloWorld.app/www/index.html
+2014-03-17 20:33:57.997 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:33:57.998 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:33:57.999 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:34:01.683 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:34:01.684 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:34:01.685 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:34:04.933 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:34:04.935 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:34:04.936 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:34:07.934 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:34:07.935 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:34:07.936 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:34:11.850 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:34:11.851 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:34:11.851 HelloWorld[19258:4103] ERROR whitelist rejection: url='http://localhost:3000/ads'
+2014-03-17 20:34:33.132 HelloWorld[19421:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-17 20:34:33.254 HelloWorld[19421:90b] Resetting plugins due to page load.
+2014-03-17 20:34:33.341 HelloWorld[19421:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/53EEFE3A-E15E-4C17-A174-FBA5E4994AE3/HelloWorld.app/www/index.html
+2014-03-17 20:42:00.755 Scupr[19821:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-17 20:42:00.762 Scupr[19821:90b] Unlimited access to network resources
+2014-03-17 20:42:00.766 Scupr[19821:90b] Fix applied for database locations?: YES
+2014-03-17 20:42:00.826 Scupr[19821:90b] Resetting plugins due to page load.
+2014-03-17 20:42:00.902 Scupr[19821:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/832D51A3-2B50-4820-BE5F-0FE5052B6246/Scupr.app/www/index.html
