@@ -4,17 +4,14 @@ var fillBucket, getBucket, onDeviceReady, onLoad;
 angular.module('scupr', ['ionic']);
 
 onLoad = function() {
-  alert("Device Loading");
   return document.addEventListener("deviceready", onDeviceReady, false);
 };
 
 onDeviceReady = function() {
-  alert("Device Ready");
   return getBucket();
 };
 
 getBucket = function() {
-  alert("get bucket!");
   return $.get("http://localhost:3000/ads", function(data) {
     return fillBucket(data);
   });
@@ -22,7 +19,6 @@ getBucket = function() {
 
 fillBucket = function(data) {
   var source, template;
-  alert("fill bucket!");
   console.log(data);
   source = $("#bucket-template").html();
   console.log(source);
@@ -31,7 +27,24 @@ fillBucket = function(data) {
   return $('#bucket').html(template(data));
 };
 
-Handlebars.registerHelper('createBucket', function(ad) {
-  console.log(ad);
-  return new Handlebars.SafeString("<a class='item item-thumbnail-left' href= \"#\">\n    <img src= \"http://localhost:3000" + ad.bucket_image + "\"/>\n    <h2>" + ad.business_name + "</h2>\n    <p>" + ad.caption + "</p>\n  </a>");
+Handlebars.registerHelper('createBucket', function(ads) {
+  var ad, column, i, out, _i, _len;
+  console.log(ads);
+  out = "";
+  for (i = _i = 0, _len = ads.length; _i < _len; i = ++_i) {
+    ad = ads[i];
+    console.log(ad);
+    console.log(i);
+    column = "<div class=\"col card\">\n	<a href=\"#\">\n		<div class=\"item item-image\">\n			<img src= \"http://localhost:3000" + ad.bucket_image + "\"/>\n		</div>\n	</a>\n</div>";
+    if (i % 4 === 0) {
+      out = out + ("<div class='row'>" + column);
+    }
+    if (i % 4 === 1 || i % 4 === 2) {
+      out = out + column;
+    }
+    if (i % 4 === 3) {
+      out = out + ("" + column + "</div>");
+    }
+  }
+  return new Handlebars.SafeString(out);
 });
