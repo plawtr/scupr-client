@@ -4,26 +4,30 @@
     %meta{charset: "utf-8"}
     %meta{name: "format-detection", content: "telephone=no"}
     %meta{name: "viewport", content: "user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"}
-    %link{rel: "stylesheet", type: "text/css", href: "css/index.css"}
+    -# %link{rel: "stylesheet", type: "text/css", href: "css/index.css"}
+    %link{rel: "stylesheet", type: "text/css", href: "css/ionic.css"}
     %title Scupr
-  %body
-    .app
-      %h1 Scupr
-      .blink#deviceready
-        %p.event.listening Connecting to Device
-        %p.event.received Device is Ready
-      %button{onclick: "getBucket();"} Pics!
+  %body{"ng-app" => "scupr"}
+    -# .app
+    .bar.bar-header
+      %button.button-icon.icon.ion-navicon
+      %h1.title Scupr
+      %button.button-clear.button-positive Home
+    %ion-content{"has-header" => "true"}
+      %h1 Testing
+      %button.button Test
+      %button.button-icon.icon.ion-camera{onclick: "getBucket();"}
       #bucket
     %script{type: "text/javascript", src: "cordova.js"}
     %script{type: "text/javascript", src: "js/jquery.js"}
     %script{type: "text/javascript", src: "js/handlebars.js"}
-    %script{type: "text/javascript", src: "js/index.js"}
-    %script{type: "text/javascript"}
-      app.initialize();
-    %script{id: 'bucket-template', type: 'text/x-handlebars-template'}
-      %ul  
+    %script{type: "text/javascript", src: "js/ionic.bundle.js"}
+    %script{id: 'bucket-template', type: 'text/x-handlebars-template'}     
+      .list
         {{#each ads}}
-        %li
-          %img{src: "http://localhost:3000{{bucket_image}}"}
+        {{createBucket this}}
         {{/each}}
     %script{type: "text/javascript", src: "js/local.js"}
+    %script
+      document.addEventListener("deviceready", getBucket, false);
+    
