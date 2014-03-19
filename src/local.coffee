@@ -11,7 +11,7 @@ onDeviceReady = () ->
 
 getBucket = () ->
 	# alert("get bucket!")
-	$.get("http://localhost:3000/ads", (data) ->
+	$.get("http://scupr-staging.herokuapp.com/ads", (data) ->
   	fillBucket(data))
 
 fillBucket = (data)->
@@ -33,7 +33,7 @@ Handlebars.registerHelper('createBucket', (ads)->
 		<div class="col card">
 			<a href="#">
 				<div class="item item-image">
-					<img src= "http://localhost:3000#{ad.bucket_image}"/>
+					<img src= "#{ad.bucket_image}"/>
 				</div>
 			</a>
 		</div>

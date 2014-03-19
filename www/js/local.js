@@ -12,7 +12,7 @@ onDeviceReady = function() {
 };
 
 getBucket = function() {
-  return $.get("http://localhost:3000/ads", function(data) {
+  return $.get("http://scupr-staging.herokuapp.com/ads", function(data) {
     return fillBucket(data);
   });
 };
@@ -35,7 +35,7 @@ Handlebars.registerHelper('createBucket', function(ads) {
     ad = ads[i];
     console.log(ad);
     console.log(i);
-    column = "<div class=\"col card\">\n	<a href=\"#\">\n		<div class=\"item item-image\">\n			<img src= \"http://localhost:3000" + ad.bucket_image + "\"/>\n		</div>\n	</a>\n</div>";
+    column = "<div class=\"col card\">\n	<a href=\"#\">\n		<div class=\"item item-image\">\n			<img src= \"" + ad.bucket_image + "\"/>\n		</div>\n	</a>\n</div>";
     if (i % 4 === 0) {
       out = out + ("<div class='row'>" + column);
     }
