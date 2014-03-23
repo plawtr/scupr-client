@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='telephone=no' name='format-detection'>
+    <meta content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi' name='viewport'>
+    <link href='css/ionic.css' rel='stylesheet' type='text/css'>
+    <title>Уonder!</title>
+  </head>
+  <body ng-app='scupr'>
+    <div class='bar bar-header'>
+      <button class='button button-icon icon ion-navicon' onclick='getBusinessForm();'></button><h1 class='title'>Уonder<i style='font-family: georgia; font-style: italic; font-size: 110%;'>!</i></h1><button class='button button-icon icon ion-ios7-arrow-back' onclick='getBucketWithGPS();'></button>
+    </div>
+    <ion-content has-header='true' id='bucket' overflow-scroll='true' style='width: 100%; height: 100%+10px;'></ion-content>
+    <script src='cordova.js' type='text/javascript'></script>
+    <script src='js/jquery.js' type='text/javascript'></script>
+    <script src='js/handlebars.js' type='text/javascript'></script>
+    <script src='js/ionic.bundle.js' type='text/javascript'></script>
+    <script id='bucket-template' type='text/x-handlebars-template'>
+      <div class='list'>
+        {{#each ads}}
+        {{createBucket this}}
+        {{/each}}
+      </div>
+    </script>
+    <script id='ad-template' type='text/x-handlebars-template'>
+      <div class='card'>
+        <div class='item'>
+          <h2>{{ad.business_name}} &middot {{ad.distance}}m</h2>
+          <p>{{ad.caption}}</p>
+        </div>
+        <div class='item item-image'>
+          <img src='{{ad.image}}'>
+        </div>
+        <a class='item item-icon-left assertive item-icon-right' data-lat='{{ad.business_GPS.lat}}' data-lng='{{ad.business_GPS.lng}}' href='#' onclick='getMapWithGPS();'>
+          <i class='icon ion-ios7-navigate-outline'></i>
+          Get directions
+          <i class='icon ion-ios7-arrow-down'></i>
+        </a>
+      </div>
+    </script>
+    <script id='form-template' type='text/x-handlebars-template'>
+      <form id='new-business'>
+        <div class='list'>
+          <button class='button' onclick='selectPhoto();'>
+            Upload File
+          </button>
+          <label class='item item-input'>
+            <input name='business-image' placeholder='Image' type='text'>
+          </label>
+          <label class='item item-input'>
+            <input name='business-name' placeholder='Business name' type='text'>
+          </label>
+          <label class='item item-input'>
+            <input name='business-radius' placeholder='Radius' type='text'>
+          </label>
+          <label class='item item-input'>
+            <input name='business-lng' placeholder='Lng' type='text'>
+          </label>
+          <label class='item item-input'>
+            <input name='business-lat' placeholder='Lat' type='text'>
+          </label>
+          <button class='button' id='submit-new' onclick='postNewBusiness();'>
+            New Business
+          </button>
+        </div>
+      </form>
+    </script>
+    <script src='js/local.js' type='text/javascript'></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA_PXRhcYPHapEnqn_xw3_6gnIne0zJMXg&amp;sensor=true' type='text/javascript'></script>
+    <script src='js/maps_local.js' type='text/javascript'></script>
+    <script>
+      document.addEventListener("deviceready", startApp, false);
+    </script>
+  </body>
+</html>
