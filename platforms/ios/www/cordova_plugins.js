@@ -205,6 +205,13 @@ module.exports = [
         "clobbers": [
             "window.FileTransfer"
         ]
+    },
+    {
+        "file": "plugins/nl.x-services.plugins.socialsharing/www/SocialSharing.js",
+        "id": "nl.x-services.plugins.socialsharing.SocialSharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -213,7 +220,8 @@ module.exports.metadata =
     "org.apache.cordova.geolocation": "0.3.6",
     "org.apache.cordova.camera": "0.2.8",
     "org.apache.cordova.file": "1.0.1",
-    "org.apache.cordova.file-transfer": "0.4.2"
+    "org.apache.cordova.file-transfer": "0.4.2",
+    "nl.x-services.plugins.socialsharing": "4.0.7"
 }
 // BOTTOM OF METADATA
 });

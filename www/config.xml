@@ -27,12 +27,15 @@
     <feature name="Camera">
     <param name="ios-package" value="CDVCamera" />
     </feature>
+
     <feature name="File">
     <param name="ios-package" value="CDVFile" />
     </feature>
+
     <feature name="FileTransfer">
     <param name="ios-package" value="CDVFileTransfer" />
     </feature>
+
 
     <!--
         If you do not want any permissions to be added to your app, add the

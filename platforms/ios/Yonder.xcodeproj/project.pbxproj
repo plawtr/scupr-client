@@ -46,6 +46,9 @@
 		894374584E494C73819883D0 /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD91E9E79784BC2890BCD86 /* CDVLocalFilesystem.m */; };
 		F62B821463AE4C429ECB5838 /* CDVAssetLibraryFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 32552C1DE8124A628ECA1DF8 /* CDVAssetLibraryFilesystem.m */; };
 		5FEA99C037254ADF8CD4DEA0 /* CDVFileTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CA2D5251D2498793700738 /* CDVFileTransfer.m */; };
+		A691112DA5D6425F98A6F976 /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 436810C4044C482C8F294CC4 /* SocialSharing.m */; };
+		5DC7BD8F5793496BA8FF75E8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C32DF7B4D94A41AD92B23C /* Social.framework */; };
+		9CA149CA18AC4D3C8FDE9694 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324E7E66B5134E2680B9B5C3 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +129,10 @@
 		2648E0287CD34A15BC750B13 /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVAssetLibraryFilesystem.h"; path = "org.apache.cordova.file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		06CA2D5251D2498793700738 /* CDVFileTransfer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVFileTransfer.m"; path = "org.apache.cordova.file-transfer/CDVFileTransfer.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		58A7407BBCCA4C44B81D1006 /* CDVFileTransfer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVFileTransfer.h"; path = "org.apache.cordova.file-transfer/CDVFileTransfer.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		436810C4044C482C8F294CC4 /* SocialSharing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SocialSharing.m"; path = "nl.x-services.plugins.socialsharing/SocialSharing.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		388777AC5E7247E3ADE32104 /* SocialSharing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SocialSharing.h"; path = "nl.x-services.plugins.socialsharing/SocialSharing.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		69C32DF7B4D94A41AD92B23C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		324E7E66B5134E2680B9B5C3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +146,8 @@
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
 				1FBE7D0124064B31A0930AE3 /* ImageIO.framework in Frameworks */,
+				5DC7BD8F5793496BA8FF75E8 /* Social.framework in Frameworks */,
+				9CA149CA18AC4D3C8FDE9694 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +242,8 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
 				0A4B783BD1154391BA1BC88E /* ImageIO.framework */,
+				69C32DF7B4D94A41AD92B23C /* Social.framework */,
+				324E7E66B5134E2680B9B5C3 /* MessageUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -263,6 +274,8 @@
 				2648E0287CD34A15BC750B13 /* CDVAssetLibraryFilesystem.h */,
 				06CA2D5251D2498793700738 /* CDVFileTransfer.m */,
 				58A7407BBCCA4C44B81D1006 /* CDVFileTransfer.h */,
+				436810C4044C482C8F294CC4 /* SocialSharing.m */,
+				388777AC5E7247E3ADE32104 /* SocialSharing.h */,
 			);
 			name = Plugins;
 			path = "Yonder/Plugins";
@@ -464,6 +477,7 @@
 				894374584E494C73819883D0 /* CDVLocalFilesystem.m in Sources */,
 				F62B821463AE4C429ECB5838 /* CDVAssetLibraryFilesystem.m in Sources */,
 				5FEA99C037254ADF8CD4DEA0 /* CDVFileTransfer.m in Sources */,
+				A691112DA5D6425F98A6F976 /* SocialSharing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

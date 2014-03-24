@@ -4,30 +4,32 @@
     %meta{charset: "utf-8"}
     %meta{name: "format-detection", content: "telephone=no"}
     %meta{name: "viewport", content: "user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"}
-    -# %link{rel: "stylesheet", type: "text/css", href: "css/index.css"}
     %link{rel: "stylesheet", type: "text/css", href: "css/ionic.css"}
-    -# %link{rel: "stylesheet", type: "text/css", href: "css/ionic.contrib.frostedGlass.css"}
     %title Уonder!
+
+
   %body{"ng-app" => "scupr"}
     .bar.bar-header
-      %button.button.button-icon.icon.ion-navicon{onclick: "getBusinessForm();"}       
+      %button.button.button-icon.icon.ion-ios7-plus-empty{onclick: "getBusinessForm();"}       
       %h1.title{}><
         %span.badge.badge-assertive
           Уonder
           %i{style:"font-family: georgia; font-style: italic; font-size: 110%;"}>< !
-      %button.button.button-icon.icon.ion-ios7-arrow-back{onclick: "getBucketWithGPS();"} 
+      %button.button.button-icon.icon.ion-ios7-refresh-empty{onclick: "getBucketWithGPS();"} 
     %ion-content#bucket{"has-header" => "true", "overflow-scroll" => "true", style: "width: 100%; height: 100%+10px;"}
+      
+  
     %script{type: "text/javascript", src: "cordova.js"}
     %script{type: "text/javascript", src: "js/jquery.js"}
     %script{type: "text/javascript", src: "js/handlebars.js"}
     %script{type: "text/javascript", src: "js/ionic.bundle.js"}
-    %script{type: "text/javascript", src: "js/exif.js"}
-    -# %script{type: "text/javascript", src: "js/ionic.contrib.frostedGlass.js"}
+
     %script{id: 'bucket-template', type: 'text/x-handlebars-template'}     
       .list
         {{#each ads}}
         {{createBucket this}}
         {{/each}}
+
     %script{id: 'ad-template', type: 'text/x-handlebars-template'}     
       .list.card
         .item
@@ -42,7 +44,7 @@
           %a.tab-item{href: "#"}
             %i.icon.ion-social-twitter-outline
             Tweet
-          %a.tab-item{href: "#"}
+          %a.tab-item{href: "#", onclick: "shareAdSocially();"}
             %i.icon.ion-ios7-paperplane-outline
             Share
         %a.item.item-icon-left.assertive.item-icon-right{href:'#', onclick: "getMapWithGPS();", "data-lng" => "{{ad.business_GPS.lng}}", "data-lat" => "{{ad.business_GPS.lat}}"}
@@ -50,6 +52,8 @@
           Get directions  
           %i.icon.ion-ios7-arrow-down
       %span#placeholder
+
+
     %script{id: 'form-template', type: 'text/x-handlebars-template'}
       %form{id: 'new-business'}
         .list
@@ -65,8 +69,8 @@
             %input{type: "text",  placeholder: "Lat", name: 'business-lat'}
           %div{style: "padding: 10px;"}  
             %button.button.button-block.icon-right.ion-chevron-right.button-positive{id: "submit-new", onclick: "selectPhoto();"}
-              Add Image and Submit
-    
+              Add Image and Submit    
+
     %script{type: "text/javascript", src: "js/local.js"}
     %script{type: "text/javascript", src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyA_PXRhcYPHapEnqn_xw3_6gnIne0zJMXg&sensor=true"}
     %script{type: "text/javascript", src: "js/maps_local.js"}

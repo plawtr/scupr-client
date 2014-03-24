@@ -7,12 +7,12 @@ onLoad = ()->
 	document.addEventListener("deviceready", onDeviceReady, false)
 
 getBucket = (position)->
-	$.get("http://scupr-staging.herokuapp.com/ads", position, (data)->
+	$.get("http:scupr-staging.herokuapp.com/ads", position, (data)->
  	fillBucket(data)
  	)
 
 getAd = (position) ->
-	$.get("http://scupr-staging.herokuapp.com/ads/#{window.currentAdId}", position, (data) ->
+	$.get("http:scupr-staging.herokuapp.com/ads/#{window.currentAdId}", position, (data) ->
  	fillAd(data))
 
 fillBucket = (data)->
@@ -77,7 +77,7 @@ getBusinessForm = ()->
 # 	event.preventDefault()
 # 	params = $('#new-business').serializeArray()
 # 	console.log(params)
-# 	$.post("http://0.0.0.0:3000/business/new", params, successPost(), "json")
+# 	$.post("http:0.0.0.0:3000/business/new", params, successPost(), "json")
 
 # successPost = ()->
 # 	alert("sending data")
@@ -90,9 +90,9 @@ selectPhoto = ()->
 			destinationType : navigator.camera.DestinationType.FILE_URI,
 			sourceType      : navigator.camera.PictureSourceType.PHOTOLIBRARY
 	}
-	navigator.camera.getPicture(uploadPhoto, pictureFail, photoOptions)
+	navigator.camera.getPicture(uploadPhoto, onPictureFail, photoOptions)
 
-pictureFail = (message)->
+onPictureFail = (message)->
 	event.preventDefault()
 	console.log('Failed because: ' + message)
 
@@ -111,15 +111,19 @@ uploadPhoto = (imageURI)->
 	options.params = params
 
 	ft = new FileTransfer()
-	ft.upload(imageURI, encodeURI("http://0.0.0.0:3000/business/new"), win, fail, options)
+	ft.upload(imageURI, encodeURI("http:0.0.0.0:3000/business/new"), onTransferSuccess, onTransferFail, options)
 
-win = (r)->
+onTransferSuccess = (r)->
 	console.log("Code = " + r.responseCode)
 	console.log("Response = " + r.response)
 	console.log("Sent = " + r.bytesSent)
 
-fail = (error)->
+onTransferFail = (error)->
 	alert("An error has occurred: Code = " + error.code)
 	console.log("upload error source " + error.source)
 	console.log("upload error target " + error.target)
+
+shareAdSocially = ()->
+	window.plugins.socialsharing.share("Hey, check out #{$('h2')[0].textContent} away from me right now: #{$('p')[0].textContent}.", 'Уonder!', $('img')[0].src, 'https://itunes.apple.com/gb/app/facebook/id284882215')
+
 

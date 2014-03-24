@@ -9,15 +9,14 @@
   </head>
   <body ng-app='scupr'>
     <div class='bar bar-header'>
-      <button class='button button-icon icon ion-navicon' onclick='getBusinessForm();'></button><h1 class='title'><span class='badge badge-assertive'>
-        Уonder<i style='font-family: georgia; font-style: italic; font-size: 110%;'>!</i></span></h1><button class='button button-icon icon ion-ios7-arrow-back' onclick='getBucketWithGPS();'></button>
+      <button class='button button-icon icon ion-ios7-plus-empty' onclick='getBusinessForm();'></button><h1 class='title'><span class='badge badge-assertive'>
+        Уonder<i style='font-family: georgia; font-style: italic; font-size: 110%;'>!</i></span></h1><button class='button button-icon icon ion-ios7-refresh-empty' onclick='getBucketWithGPS();'></button>
     </div>
     <ion-content has-header='true' id='bucket' overflow-scroll='true' style='width: 100%; height: 100%+10px;'></ion-content>
     <script src='cordova.js' type='text/javascript'></script>
     <script src='js/jquery.js' type='text/javascript'></script>
     <script src='js/handlebars.js' type='text/javascript'></script>
     <script src='js/ionic.bundle.js' type='text/javascript'></script>
-    <script src='js/exif.js' type='text/javascript'></script>
     <script id='bucket-template' type='text/x-handlebars-template'>
       <div class='list'>
         {{#each ads}}
@@ -43,7 +42,7 @@
             <i class='icon ion-social-twitter-outline'></i>
             Tweet
           </a>
-          <a class='tab-item' href='#'>
+          <a class='tab-item' href='#' onclick='shareAdSocially();'>
             <i class='icon ion-ios7-paperplane-outline'></i>
             Share
           </a>

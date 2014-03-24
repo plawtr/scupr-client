@@ -508,3 +508,71 @@ libc++abi.dylib: terminating with uncaught exception of type NSException
 2014-03-24 10:53:09.806 Yonder[4012:90b] [CDVTimer][TotalPluginStartup] 1.112998ms
 2014-03-24 10:53:09.865 Yonder[4012:90b] Resetting plugins due to page load.
 2014-03-24 10:53:10.903 Yonder[4012:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 11:20:32.223 Yonder[4775:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 11:20:32.232 Yonder[4775:90b] Unlimited access to network resources
+2014-03-24 11:20:32.254 Yonder[4775:90b] [CDVTimer][file] 0.548005ms
+2014-03-24 11:20:32.254 Yonder[4775:90b] [CDVTimer][TotalPluginStartup] 1.074970ms
+2014-03-24 11:20:32.297 Yonder[4775:90b] Resetting plugins due to page load.
+2014-03-24 11:20:32.731 Yonder[4775:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 11:21:24.217 Yonder[4775:90b] Resetting plugins due to page load.
+2014-03-24 11:21:34.694 Yonder[4775:90b] Failed to load webpage with error: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2014-03-24 11:21:34.695 Yonder[4775:90b] Resetting plugins due to page load.
+2014-03-24 11:21:36.004 Yonder[4775:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 11:56:26.655 Yonder[5611:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 11:56:26.662 Yonder[5611:90b] Unlimited access to network resources
+2014-03-24 11:56:26.679 Yonder[5611:90b] [CDVTimer][file] 0.562012ms
+2014-03-24 11:56:26.680 Yonder[5611:90b] [CDVTimer][TotalPluginStartup] 1.088023ms
+2014-03-24 11:56:26.721 Yonder[5611:90b] Resetting plugins due to page load.
+2014-03-24 11:56:27.123 Yonder[5611:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 11:57:55.841 Yonder[6184:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 11:57:55.848 Yonder[6184:90b] Unlimited access to network resources
+2014-03-24 11:57:55.868 Yonder[6184:90b] [CDVTimer][file] 0.501990ms
+2014-03-24 11:57:55.868 Yonder[6184:90b] [CDVTimer][TotalPluginStartup] 1.150966ms
+2014-03-24 11:57:55.934 Yonder[6184:90b] Resetting plugins due to page load.
+2014-03-24 11:57:56.231 Yonder[6184:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 11:57:56.262 Yonder[6184:90b] THREAD WARNING: ['Geolocation'] took '11.075928' ms. Plugin should use a background thread.
+2014-03-24 13:22:55.063 Yonder[7396:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 13:22:55.070 Yonder[7396:90b] Unlimited access to network resources
+2014-03-24 13:22:55.086 Yonder[7396:90b] [CDVTimer][file] 0.510991ms
+2014-03-24 13:22:55.087 Yonder[7396:90b] [CDVTimer][TotalPluginStartup] 1.173019ms
+2014-03-24 13:22:55.103 Yonder[7396:90b] Resetting plugins due to page load.
+2014-03-24 13:22:55.417 Yonder[7396:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 13:24:36.257 Yonder[7396:90b] THREAD WARNING: ['SocialSharing'] took '136.670166' ms. Plugin should use a background thread.
+2014-03-24 13:27:42.510 Yonder[7396:90b] THREAD WARNING: ['SocialSharing'] took '17752.020996' ms. Plugin should use a background thread.
+2014-03-24 13:27:42.512 Yonder[7396:4103] void SendDelegateMessage(NSInvocation *): delegate (webView:decidePolicyForNavigationAction:request:frame:decisionListener:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2014-03-24 13:27:50.631 Yonder[7396:90b] THREAD WARNING: ['SocialSharing'] took '80.298340' ms. Plugin should use a background thread.
+2014-03-24 13:32:12.211 Yonder[7396:90b] THREAD WARNING: ['SocialSharing'] took '94.216064' ms. Plugin should use a background thread.
+2014-03-24 13:42:49.019 Yonder[8032:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 13:42:49.026 Yonder[8032:90b] Unlimited access to network resources
+2014-03-24 13:42:49.042 Yonder[8032:90b] [CDVTimer][file] 0.503004ms
+2014-03-24 13:42:49.043 Yonder[8032:90b] [CDVTimer][TotalPluginStartup] 1.090050ms
+2014-03-24 13:42:49.059 Yonder[8032:90b] Resetting plugins due to page load.
+2014-03-24 13:42:49.432 Yonder[8032:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 13:43:04.021 Yonder[8032:90b] THREAD WARNING: ['SocialSharing'] took '340.885986' ms. Plugin should use a background thread.
+2014-03-24 13:43:04.500 Yonder[8032:90b] Warning: Attempt to present <UIActivityViewController: 0x101a4ce0> on <MainViewController: 0xcb69890> while a presentation is in progress!
+2014-03-24 13:43:04.501 Yonder[8032:90b] THREAD WARNING: ['SocialSharing'] took '437.924072' ms. Plugin should use a background thread.
+2014-03-24 13:45:20.948 Yonder[8032:90b] THREAD WARNING: ['SocialSharing'] took '645.145020' ms. Plugin should use a background thread.
+2014-03-24 13:45:21.598 Yonder[8032:90b] Warning: Attempt to present <UIActivityViewController: 0xcb66c00> on <MainViewController: 0xcb69890> while a presentation is in progress!
+2014-03-24 13:45:21.598 Yonder[8032:90b] THREAD WARNING: ['SocialSharing'] took '613.608887' ms. Plugin should use a background thread.
+2014-03-24 13:46:02.360 Yonder[8459:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 13:46:02.367 Yonder[8459:90b] Unlimited access to network resources
+2014-03-24 13:46:02.383 Yonder[8459:90b] [CDVTimer][file] 0.497997ms
+2014-03-24 13:46:02.383 Yonder[8459:90b] [CDVTimer][TotalPluginStartup] 1.044035ms
+2014-03-24 13:46:02.400 Yonder[8459:90b] Resetting plugins due to page load.
+2014-03-24 13:46:02.756 Yonder[8459:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 13:47:43.766 Yonder[8864:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 13:47:43.772 Yonder[8864:90b] Unlimited access to network resources
+2014-03-24 13:47:43.791 Yonder[8864:90b] [CDVTimer][file] 0.524998ms
+2014-03-24 13:47:43.791 Yonder[8864:90b] [CDVTimer][TotalPluginStartup] 1.107991ms
+2014-03-24 13:47:43.826 Yonder[8864:90b] Resetting plugins due to page load.
+2014-03-24 13:47:49.473 Yonder[8864:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 13:47:57.624 Yonder[8864:90b] THREAD WARNING: ['SocialSharing'] took '623.856934' ms. Plugin should use a background thread.
+2014-03-24 13:47:57.874 Yonder[8864:90b] Warning: Attempt to present <UIActivityViewController: 0xcde96e0> on <MainViewController: 0xbe909d0> while a presentation is in progress!
+2014-03-24 13:47:57.874 Yonder[8864:90b] THREAD WARNING: ['SocialSharing'] took '207.097900' ms. Plugin should use a background thread.
+2014-03-24 13:48:17.538 Yonder[8864:90b] THREAD WARNING: ['SocialSharing'] took '378.394043' ms. Plugin should use a background thread.
+2014-03-24 13:48:17.911 Yonder[8864:90b] Warning: Attempt to present <UIActivityViewController: 0xf7abdb0> on <MainViewController: 0xbe909d0> while a presentation is in progress!
+2014-03-24 13:48:17.912 Yonder[8864:90b] THREAD WARNING: ['SocialSharing'] took '348.263916' ms. Plugin should use a background thread.
+2014-03-24 13:55:29.085 Yonder[8864:90b] THREAD WARNING: ['SocialSharing'] took '270.587158' ms. Plugin should use a background thread.
+2014-03-24 13:56:11.018 Yonder[8864:90b] THREAD WARNING: ['SocialSharing'] took '1287.854248' ms. Plugin should use a background thread.
+2014-03-24 13:56:11.166 Yonder[8864:90b] Warning: Attempt to present <UIActivityViewController: 0xcb1b960> on <MainViewController: 0xbe909d0> while a presentation is in progress!
+2014-03-24 13:56:11.166 Yonder[8864:90b] THREAD WARNING: ['SocialSharing'] took '121.997803' ms. Plugin should use a background thread.

@@ -22,6 +22,9 @@
     <feature name="Geolocation">
         <param name="ios-package" value="CDVLocation" />
     </feature>
+    <feature name="SocialSharing">
+        <param name="ios-package" value="SocialSharing" />
+    </feature>
     <name>Yonder</name>
     <description>
         A geolocational application that is a lot of fun to use to discover things locally.
