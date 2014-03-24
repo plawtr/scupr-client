@@ -258,7 +258,8 @@ onGPSSuccess = function(position) {
 
 getMapWithGPS = function() {
   var mapCanvas;
-  mapCanvas = $('<div id="map" style="width: 100%; height: 100%"></div>').appendTo('#bucket');
+  mapCanvas = $("<div class=\"list card\">\n    <div class=\"item item-image\" id=\"map\" style=\"width: 100%; height: 400px\">\n    </div>\n</div>");
+  $('#placeholder').html(mapCanvas);
   window.businessLng = $(this.event.target).data('lng');
   window.businessLat = $(this.event.target).data('lat');
   return navigator.geolocation.getCurrentPosition(onGPSSuccess, onGPSError);
