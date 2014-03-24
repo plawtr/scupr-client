@@ -10,17 +10,18 @@
     %title Уonder!
   %body{"ng-app" => "scupr"}
     .bar.bar-header
-      %button.button.button-icon.icon.ion-navicon{onclick: "getBusinessForm();"} 
+      %button.button.button-icon.icon.ion-navicon{onclick: "getBusinessForm();"}       
       %h1.title{}><
-        Уonder
-        %i{style:"font-family: georgia; font-style: italic; font-size: 110%;"}>< !
+        %span.badge.badge-assertive
+          Уonder
+          %i{style:"font-family: georgia; font-style: italic; font-size: 110%;"}>< !
       %button.button.button-icon.icon.ion-ios7-arrow-back{onclick: "getBucketWithGPS();"} 
     %ion-content#bucket{"has-header" => "true", "overflow-scroll" => "true", style: "width: 100%; height: 100%+10px;"}
-
     %script{type: "text/javascript", src: "cordova.js"}
     %script{type: "text/javascript", src: "js/jquery.js"}
     %script{type: "text/javascript", src: "js/handlebars.js"}
     %script{type: "text/javascript", src: "js/ionic.bundle.js"}
+    %script{type: "text/javascript", src: "js/exif.js"}
     -# %script{type: "text/javascript", src: "js/ionic.contrib.frostedGlass.js"}
     %script{id: 'bucket-template', type: 'text/x-handlebars-template'}     
       .list
@@ -28,12 +29,22 @@
         {{createBucket this}}
         {{/each}}
     %script{id: 'ad-template', type: 'text/x-handlebars-template'}     
-      .card
+      .list.card
         .item
           %h2 {{ad.business_name}} &middot {{ad.distance}}m
           %p {{ad.caption}}
         .item.item-image
-          %img{src: "{{ad.image}}"}
+          %img.full-mage{src: "{{ad.image}}"}
+        .item.tabs.tabs-secondary.tabs-icon-left
+          %a.tab-item{href: "#"}
+            %i.icon.ion-ios7-telephone-outline
+            Call
+          %a.tab-item{href: "#"}
+            %i.icon.ion-social-twitter-outline
+            Tweet
+          %a.tab-item{href: "#"}
+            %i.icon.ion-ios7-paperplane-outline
+            Share
         %a.item.item-icon-left.assertive.item-icon-right{href:'#', onclick: "getMapWithGPS();", "data-lng" => "{{ad.business_GPS.lng}}", "data-lat" => "{{ad.business_GPS.lat}}"}
           %i.icon.ion-ios7-navigate-outline
           Get directions  
@@ -41,20 +52,20 @@
     %script{id: 'form-template', type: 'text/x-handlebars-template'}
       %form{id: 'new-business'}
         .list
-          %button.button{ onclick: "selectPhoto();"}
-            Upload File
-          %label.item.item-input
-            %input{type: "text",  placeholder: "Image", name: 'business-image'}
           %label.item.item-input
             %input{type: "text",  placeholder: "Business name", name: 'business-name'}
+          %label.item.item-input
+            %input{type: "text",  placeholder: "Caption", name: 'ad-caption'}
           %label.item.item-input
             %input{type: "text",  placeholder: "Radius", name: 'business-radius'}
           %label.item.item-input
             %input{type: "text",  placeholder: "Lng", name: 'business-lng'}
           %label.item.item-input
             %input{type: "text",  placeholder: "Lat", name: 'business-lat'}
-          %button.button{ id: "submit-new", onclick: "postNewBusiness();" }
-            New Business
+          %div{style: "padding: 10px;"}  
+            %button.button.button-block.icon-right.ion-chevron-right.button-positive{id: "submit-new", onclick: "selectPhoto();"}
+              Add Image and Submit
+    
     %script{type: "text/javascript", src: "js/local.js"}
     %script{type: "text/javascript", src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyA_PXRhcYPHapEnqn_xw3_6gnIne0zJMXg&sensor=true"}
     %script{type: "text/javascript", src: "js/maps_local.js"}

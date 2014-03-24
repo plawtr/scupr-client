@@ -30,7 +30,11 @@
         Bean
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="Camera">
+        <param name="ios-package" value="CDVCamera" />
+    </feature>
     <feature name="File">
+        <param name="onload" value="true" />
         <param name="ios-package" value="CDVFile" />
     </feature>
     <feature name="FileTransfer">
@@ -78,7 +82,4 @@
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="*" />
     <access origin="http://127.0.0.1*" />
-    <feature name="Camera">
-        <param name="ios-package" value="CDVCamera" />
-    </feature>
 </widget>

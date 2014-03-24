@@ -72,50 +72,54 @@ getBusinessForm = ()->
 	template = Handlebars.compile(source)
 	$('#bucket').html(template())
 
-postNewBusiness = ()-> 	
-	alert('submiting')
-	event.preventDefault()
-	params = $('#new-business').serializeArray()
-	console.log(params)
-	$.post("http://0.0.0.0:3000/business/new", params, successPost(), "json")
+# postNewBusiness = ()-> 	
+# 	alert('submiting')
+# 	event.preventDefault()
+# 	params = $('#new-business').serializeArray()
+# 	console.log(params)
+# 	$.post("http://0.0.0.0:3000/business/new", params, successPost(), "json")
 
-successPost = ()->
-	alert("sending data")
+# successPost = ()->
+# 	alert("sending data")
 
-pictureFail = (message)->
-	alert("sending data")
  
 selectPhoto = ()->
-	navigator.camera.getPicture(uploadPhoto, pictureFail(message), 
-		{
-      quality         : 50,
-      destinationType : navigator.camera.DestinationType.FILE_URI,
-      sourceType      : navigator.camera.PictureSourceType.PHOTOLIBRARY
-	  }
-  )
+	event.preventDefault()
+	photoOptions = {
+			quality         : 100,
+			destinationType : navigator.camera.DestinationType.FILE_URI,
+			sourceType      : navigator.camera.PictureSourceType.PHOTOLIBRARY
+	}
+	navigator.camera.getPicture(uploadPhoto, pictureFail, photoOptions)
+
+pictureFail = (message)->
+	event.preventDefault()
+	console.log('Failed because: ' + message)
 
 uploadPhoto = (imageURI)-> 
-  options = new FileUploadOptions()
-  options.fileKey="file"
-  options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1)
-  options.mimeType="image/jpeg"
+	console.log("point 4")
+	console.log(imageURI)
 
-  params = {}
-  params.value1 = "test"
-  params.value2 = "param"
+	options = new FileUploadOptions()
+	options.fileKey="file"
+	options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1)
+	options.mimeType="image/jpeg"
 
-  options.params = params
+	params = {}
+	params[input.name] = input.value for input in $("input")
 
-  ft = new FileTransfer()
-  ft.upload(imageURI, encodeURI("http://0.0.0.0:3000/business/new"), win, fail, options)
+	options.params = params
+
+	ft = new FileTransfer()
+	ft.upload(imageURI, encodeURI("http://0.0.0.0:3000/business/new"), win, fail, options)
 
 win = (r)->
-  console.log("Code = " + r.responseCode)
-  console.log("Response = " + r.response)
-  console.log("Sent = " + r.bytesSent)
+	console.log("Code = " + r.responseCode)
+	console.log("Response = " + r.response)
+	console.log("Sent = " + r.bytesSent)
 
 fail = (error)->
-  alert("An error has occurred: Code = " + error.code)
-  console.log("upload error source " + error.source)
-  console.log("upload error target " + error.target)
+	alert("An error has occurred: Code = " + error.code)
+	console.log("upload error source " + error.source)
+	console.log("upload error target " + error.target)
 

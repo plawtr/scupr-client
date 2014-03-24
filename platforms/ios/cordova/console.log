@@ -18,3 +18,455 @@
 2014-03-23 18:37:04.997 Yonder[76274:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B6227081-0BD0-43FC-9782-0643FDE150DC/Yonder.app/www/index.html
 2014-03-23 18:37:23.422 Yonder[76274:90b] Resetting plugins due to page load.
 2014-03-23 18:37:23.467 Yonder[76274:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B6227081-0BD0-43FC-9782-0643FDE150DC/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:40:06.524 Yonder[76656:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 18:40:06.531 Yonder[76656:90b] Unlimited access to network resources
+2014-03-23 18:40:06.585 Yonder[76656:90b] Resetting plugins due to page load.
+2014-03-23 18:40:06.941 Yonder[76656:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B6227081-0BD0-43FC-9782-0643FDE150DC/Yonder.app/www/index.html
+2014-03-23 18:40:22.526 Yonder[76833:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 18:40:22.533 Yonder[76833:90b] Unlimited access to network resources
+2014-03-23 18:40:22.661 Yonder[76833:90b] Resetting plugins due to page load.
+2014-03-23 18:40:22.993 Yonder[76833:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 18:40:35.552 Yonder[76833:90b] Resetting plugins due to page load.
+2014-03-23 18:40:35.598 Yonder[76833:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:40:38.197 Yonder[76833:90b] Resetting plugins due to page load.
+2014-03-23 18:40:38.245 Yonder[76833:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:40:41.226 Yonder[76833:90b] Resetting plugins due to page load.
+2014-03-23 18:40:41.271 Yonder[76833:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:43:12.003 Yonder[77266:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 18:43:12.011 Yonder[77266:90b] Unlimited access to network resources
+2014-03-23 18:43:12.026 Yonder[77266:90b] [CDVTimer][file] 0.468016ms
+2014-03-23 18:43:12.027 Yonder[77266:90b] [CDVTimer][TotalPluginStartup] 1.123011ms
+2014-03-23 18:43:12.063 Yonder[77266:90b] Resetting plugins due to page load.
+2014-03-23 18:43:12.483 Yonder[77266:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 18:43:28.025 Yonder[77266:90b] Resetting plugins due to page load.
+2014-03-23 18:43:28.068 Yonder[77266:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:43:30.920 Yonder[77266:90b] Resetting plugins due to page load.
+2014-03-23 18:43:31.012 Yonder[77266:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:43:38.704 Yonder[77266:90b] Resetting plugins due to page load.
+2014-03-23 18:43:38.947 Yonder[77266:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:45:03.521 Yonder[77675:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 18:45:03.528 Yonder[77675:90b] Unlimited access to network resources
+2014-03-23 18:45:03.543 Yonder[77675:90b] [CDVTimer][file] 0.468969ms
+2014-03-23 18:45:03.544 Yonder[77675:90b] [CDVTimer][TotalPluginStartup] 1.089990ms
+2014-03-23 18:45:03.580 Yonder[77675:90b] Resetting plugins due to page load.
+2014-03-23 18:45:03.973 Yonder[77675:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 18:45:37.560 Yonder[77675:90b] Resetting plugins due to page load.
+2014-03-23 18:45:37.809 Yonder[77675:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:46:04.749 Yonder[77675:90b] Resetting plugins due to page load.
+2014-03-23 18:46:04.994 Yonder[77675:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=qedqe&business-name=weEW&business-radius=eeqd&business-lng=23&business-lat=23
+2014-03-23 18:49:18.739 Yonder[77939:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 18:49:18.747 Yonder[77939:90b] Unlimited access to network resources
+2014-03-23 18:49:18.764 Yonder[77939:90b] [CDVTimer][file] 0.526965ms
+2014-03-23 18:49:18.764 Yonder[77939:90b] [CDVTimer][TotalPluginStartup] 1.052022ms
+2014-03-23 18:49:18.802 Yonder[77939:90b] Resetting plugins due to page load.
+2014-03-23 18:49:19.177 Yonder[77939:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 18:49:35.044 Yonder[77939:90b] Resetting plugins due to page load.
+2014-03-23 18:49:35.294 Yonder[77939:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:49:43.475 Yonder[77939:90b] Resetting plugins due to page load.
+2014-03-23 18:49:43.721 Yonder[77939:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:53:21.522 Yonder[78379:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 18:53:21.529 Yonder[78379:90b] Unlimited access to network resources
+2014-03-23 18:53:21.545 Yonder[78379:90b] [CDVTimer][file] 0.468016ms
+2014-03-23 18:53:21.546 Yonder[78379:90b] [CDVTimer][TotalPluginStartup] 1.092017ms
+2014-03-23 18:53:21.581 Yonder[78379:90b] Resetting plugins due to page load.
+2014-03-23 18:53:22.006 Yonder[78379:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 18:53:51.002 Yonder[78379:90b] Resetting plugins due to page load.
+2014-03-23 18:53:51.531 Yonder[78379:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 18:54:00.596 Yonder[78379:90b] THREAD WARNING: ['Camera'] took '64.665039' ms. Plugin should use a background thread.
+2014-03-23 18:54:00.644 Yonder[78379:90b] Resetting plugins due to page load.
+2014-03-23 18:54:01.362 Yonder[78379:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:54:22.583 Yonder[78379:90b] Resetting plugins due to page load.
+2014-03-23 18:54:22.858 Yonder[78379:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:54:28.609 Yonder[78379:90b] Resetting plugins due to page load.
+2014-03-23 18:54:29.086 Yonder[78379:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:54:36.081 Yonder[78379:90b] Resetting plugins due to page load.
+2014-03-23 18:54:36.350 Yonder[78379:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:54:42.254 Yonder[78379:90b] Resetting plugins due to page load.
+2014-03-23 18:54:42.686 Yonder[78379:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 18:54:44.795 Yonder[78379:90b] Resetting plugins due to page load.
+2014-03-23 18:54:45.115 Yonder[78379:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 19:01:26.674 Yonder[78863:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 19:01:26.681 Yonder[78863:90b] Unlimited access to network resources
+2014-03-23 19:01:26.696 Yonder[78863:90b] [CDVTimer][file] 0.467002ms
+2014-03-23 19:01:26.696 Yonder[78863:90b] [CDVTimer][TotalPluginStartup] 1.025975ms
+2014-03-23 19:01:26.732 Yonder[78863:90b] Resetting plugins due to page load.
+2014-03-23 19:01:27.178 Yonder[78863:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 19:01:38.481 Yonder[78863:90b] THREAD WARNING: ['Camera'] took '41.877930' ms. Plugin should use a background thread.
+2014-03-23 19:01:38.508 Yonder[78863:90b] Resetting plugins due to page load.
+2014-03-23 19:01:38.557 Yonder[78863:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 19:02:03.265 Yonder[78863:90b] Resetting plugins due to page load.
+2014-03-23 19:02:03.756 Yonder[78863:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 19:02:09.300 Yonder[78863:90b] Resetting plugins due to page load.
+2014-03-23 19:02:09.578 Yonder[78863:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 19:02:23.123 Yonder[78863:90b] Resetting plugins due to page load.
+2014-03-23 19:02:23.615 Yonder[78863:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 19:02:31.121 Yonder[78863:90b] Resetting plugins due to page load.
+2014-03-23 19:02:31.395 Yonder[78863:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 19:06:22.976 Yonder[79308:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 19:06:22.983 Yonder[79308:90b] Unlimited access to network resources
+2014-03-23 19:06:22.998 Yonder[79308:90b] [CDVTimer][file] 0.471056ms
+2014-03-23 19:06:22.999 Yonder[79308:90b] [CDVTimer][TotalPluginStartup] 1.058996ms
+2014-03-23 19:06:23.035 Yonder[79308:90b] Resetting plugins due to page load.
+2014-03-23 19:06:23.418 Yonder[79308:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 19:06:36.845 Yonder[79308:90b] Resetting plugins due to page load.
+2014-03-23 19:06:37.251 Yonder[79308:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 19:06:56.474 Yonder[79308:90b] THREAD WARNING: ['Camera'] took '47.159912' ms. Plugin should use a background thread.
+2014-03-23 19:06:56.501 Yonder[79308:90b] Resetting plugins due to page load.
+2014-03-23 19:06:56.778 Yonder[79308:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 19:07:04.508 Yonder[79308:90b] Resetting plugins due to page load.
+2014-03-23 19:07:04.787 Yonder[79308:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 19:07:14.962 Yonder[79308:90b] Resetting plugins due to page load.
+2014-03-23 19:07:15.247 Yonder[79308:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 19:07:27.463 Yonder[79308:90b] Resetting plugins due to page load.
+2014-03-23 19:07:27.735 Yonder[79308:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=wefew&business-name=wewe&business-radius=wewe&business-lng=ewe&business-lat=wew
+2014-03-23 19:07:33.474 Yonder[79308:90b] Resetting plugins due to page load.
+2014-03-23 19:07:33.916 Yonder[79308:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=wefew&business-name=wewe&business-radius=wewe&business-lng=ewe&business-lat=wew
+2014-03-23 19:07:36.436 Yonder[79308:90b] Resetting plugins due to page load.
+2014-03-23 19:07:36.729 Yonder[79308:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html?business-image=&business-name=&business-radius=&business-lng=&business-lat=
+2014-03-23 19:16:26.476 Yonder[79830:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 19:16:26.483 Yonder[79830:90b] Unlimited access to network resources
+2014-03-23 19:16:26.501 Yonder[79830:90b] [CDVTimer][file] 0.484049ms
+2014-03-23 19:16:26.501 Yonder[79830:90b] [CDVTimer][TotalPluginStartup] 1.048028ms
+2014-03-23 19:16:26.566 Yonder[79830:90b] Resetting plugins due to page load.
+2014-03-23 19:16:28.480 Yonder[79830:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 19:16:47.393 Yonder[80063:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 19:16:47.409 Yonder[80063:90b] Unlimited access to network resources
+2014-03-23 19:16:47.432 Yonder[80063:90b] [CDVTimer][file] 0.783026ms
+2014-03-23 19:16:47.443 Yonder[80063:90b] [CDVTimer][TotalPluginStartup] 11.743009ms
+2014-03-23 19:16:47.666 Yonder[80063:90b] Resetting plugins due to page load.
+2014-03-23 19:16:48.308 Yonder[80063:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 19:17:01.596 Yonder[80063:90b] THREAD WARNING: ['Camera'] took '63.715820' ms. Plugin should use a background thread.
+2014-03-23 19:17:57.776 Yonder[80461:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 19:17:57.784 Yonder[80461:90b] Unlimited access to network resources
+2014-03-23 19:17:57.805 Yonder[80461:90b] [CDVTimer][file] 0.546992ms
+2014-03-23 19:17:57.805 Yonder[80461:90b] [CDVTimer][TotalPluginStartup] 1.070023ms
+2014-03-23 19:17:57.891 Yonder[80461:90b] Resetting plugins due to page load.
+2014-03-23 19:17:58.304 Yonder[80461:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 19:18:20.035 Yonder[80461:90b] Resetting plugins due to page load.
+2014-03-23 19:18:20.472 Yonder[80461:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 19:18:22.873 Yonder[80461:90b] THREAD WARNING: ['Camera'] took '44.136963' ms. Plugin should use a background thread.
+2014-03-23 19:18:26.752 Yonder[80461:5b07] File Transfer Finished with response code 200
+2014-03-23 19:26:24.970 Yonder[80954:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 19:26:24.977 Yonder[80954:90b] Unlimited access to network resources
+2014-03-23 19:26:24.994 Yonder[80954:90b] [CDVTimer][file] 0.697970ms
+2014-03-23 19:26:24.995 Yonder[80954:90b] [CDVTimer][TotalPluginStartup] 1.457036ms
+2014-03-23 19:26:25.055 Yonder[80954:90b] Resetting plugins due to page load.
+2014-03-23 19:26:31.257 Yonder[80954:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 19:26:46.792 Yonder[80954:90b] THREAD WARNING: ['Camera'] took '42.659912' ms. Plugin should use a background thread.
+2014-03-23 19:26:48.609 Yonder[80954:90b] -[__NSArrayM objectForKey:]: unrecognized selector sent to instance 0x14589ed0
+2014-03-23 19:26:48.616 Yonder[80954:90b] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSArrayM objectForKey:]: unrecognized selector sent to instance 0x14589ed0'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x001191e4 __exceptionPreprocess + 180
+	1   libobjc.A.dylib                     0x020888e5 objc_exception_throw + 44
+	2   CoreFoundation                      0x001b6243 -[NSObject(NSObject) doesNotRecognizeSelector:] + 275
+	3   CoreFoundation                      0x0010950b ___forwarding___ + 1019
+	4   CoreFoundation                      0x001090ee _CF_forwarding_prep_0 + 14
+	5   Yonder                              0x00046b66 -[CDVFileTransfer requestForUploadCommand:fileData:] + 1478
+	6   Yonder                              0x0004930f -[CDVFileTransfer uploadData:command:] + 127
+	7   Yonder                              0x00048dae -[CDVFileTransfer fileDataForUploadCommand:] + 2062
+	8   Yonder                              0x00049274 -[CDVFileTransfer upload:] + 100
+	9   Yonder                              0x0001aa56 -[CDVCommandQueue execute:] + 902
+	10  Yonder                              0x0001a270 -[CDVCommandQueue executePending] + 848
+	11  Yonder                              0x0001b363 -[CDVCommandDelegateImpl evalJsHelper2:] + 355
+	12  libobjc.A.dylib                     0x0209a82b -[NSObject performSelector:withObject:] + 70
+	13  Foundation                          0x01cdce48 __NSThreadPerformPerform + 285
+	14  CoreFoundation                      0x000a277f __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 15
+	15  CoreFoundation                      0x000a210b __CFRunLoopDoSources0 + 235
+	16  CoreFoundation                      0x000bf1ae __CFRunLoopRun + 910
+	17  CoreFoundation                      0x000be9d3 CFRunLoopRunSpecific + 467
+	18  CoreFoundation                      0x000be7eb CFRunLoopRunInMode + 123
+	19  GraphicsServices                    0x035045ee GSEventRunModal + 192
+	20  GraphicsServices                    0x0350442b GSEventRun + 104
+	21  UIKit                               0x00380f9b UIApplicationMain + 1225
+	22  Yonder                              0x00020d4c main + 92
+	23  Yonder                              0x00020cdd start + 53
+)
+libc++abi.dylib: terminating with uncaught exception of type NSException
+2014-03-23 19:28:27.573 Yonder[81364:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 19:28:27.580 Yonder[81364:90b] Unlimited access to network resources
+2014-03-23 19:28:27.599 Yonder[81364:90b] [CDVTimer][file] 0.478029ms
+2014-03-23 19:28:27.599 Yonder[81364:90b] [CDVTimer][TotalPluginStartup] 1.118004ms
+2014-03-23 19:28:27.693 Yonder[81364:90b] Resetting plugins due to page load.
+2014-03-23 19:28:28.102 Yonder[81364:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 19:28:36.020 Yonder[81364:90b] Resetting plugins due to page load.
+2014-03-23 19:28:36.402 Yonder[81364:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 19:28:43.410 Yonder[81364:90b] THREAD WARNING: ['Camera'] took '55.641846' ms. Plugin should use a background thread.
+2014-03-23 19:28:43.797 Yonder[81364:90b] Warning: Attempt to present <CDVCameraPicker: 0xa90de00> on <MainViewController: 0xa2366f0> while a presentation is in progress!
+2014-03-23 19:28:46.089 Yonder[81364:1503] File Transfer Finished with response code 200
+2014-03-23 19:42:53.312 Yonder[81921:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 19:42:53.319 Yonder[81921:90b] Unlimited access to network resources
+2014-03-23 19:42:53.335 Yonder[81921:90b] [CDVTimer][file] 0.501990ms
+2014-03-23 19:42:53.335 Yonder[81921:90b] [CDVTimer][TotalPluginStartup] 1.134992ms
+2014-03-23 19:42:53.371 Yonder[81921:90b] Resetting plugins due to page load.
+2014-03-23 19:42:53.775 Yonder[81921:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 19:43:35.142 Yonder[81921:90b] THREAD WARNING: ['Camera'] took '49.424805' ms. Plugin should use a background thread.
+2014-03-23 19:43:37.907 Yonder[81921:1403] File Transfer Finished with response code 200
+2014-03-23 19:44:33.317 Yonder[82322:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 19:44:33.325 Yonder[82322:90b] Unlimited access to network resources
+2014-03-23 19:44:33.340 Yonder[82322:90b] [CDVTimer][file] 0.470996ms
+2014-03-23 19:44:33.341 Yonder[82322:90b] [CDVTimer][TotalPluginStartup] 1.037002ms
+2014-03-23 19:44:33.376 Yonder[82322:90b] Resetting plugins due to page load.
+2014-03-23 19:44:33.852 Yonder[82322:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 19:46:15.512 Yonder[82722:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 19:46:15.519 Yonder[82722:90b] Unlimited access to network resources
+2014-03-23 19:46:15.535 Yonder[82722:90b] [CDVTimer][file] 0.470996ms
+2014-03-23 19:46:15.536 Yonder[82722:90b] [CDVTimer][TotalPluginStartup] 1.114011ms
+2014-03-23 19:46:15.572 Yonder[82722:90b] Resetting plugins due to page load.
+2014-03-23 19:46:15.975 Yonder[82722:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 19:46:37.013 Yonder[82722:90b] THREAD WARNING: ['Camera'] took '41.641113' ms. Plugin should use a background thread.
+2014-03-23 19:46:38.873 Yonder[82722:2d13] File Transfer Finished with response code 200
+2014-03-23 19:58:51.783 Yonder[83265:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 19:58:51.790 Yonder[83265:90b] Unlimited access to network resources
+2014-03-23 19:58:51.806 Yonder[83265:90b] [CDVTimer][file] 0.481009ms
+2014-03-23 19:58:51.806 Yonder[83265:90b] [CDVTimer][TotalPluginStartup] 1.097977ms
+2014-03-23 19:58:51.842 Yonder[83265:90b] Resetting plugins due to page load.
+2014-03-23 19:58:52.493 Yonder[83265:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 21:03:35.109 Yonder[84722:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 21:03:35.115 Yonder[84722:90b] Unlimited access to network resources
+2014-03-23 21:03:35.134 Yonder[84722:90b] [CDVTimer][file] 0.841975ms
+2014-03-23 21:03:35.135 Yonder[84722:90b] [CDVTimer][TotalPluginStartup] 1.460969ms
+2014-03-23 21:03:35.190 Yonder[84722:90b] Resetting plugins due to page load.
+2014-03-23 21:03:37.200 Yonder[84722:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 21:03:53.719 Yonder[84722:90b] THREAD WARNING: ['Camera'] took '52.336182' ms. Plugin should use a background thread.
+2014-03-23 21:03:57.697 Yonder[84722:4717] WriteStreamError domain: 0 error: 0
+2014-03-23 21:03:57.699 Yonder[84722:4717] FileTransferError {
+    body = "";
+    code = 3;
+    "http_status" = 0;
+    source = "file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/tmp/cdv_photo_006.jpg";
+    target = "http://0.0.0.0:3000/business/new";
+}
+2014-03-23 21:03:57.699 Yonder[84722:4717] File Transfer Error: Could not connect to the server.
+2014-03-23 21:04:37.662 Yonder[84722:140f] File Transfer Finished with response code 200
+2014-03-23 21:16:31.072 Yonder[85293:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 21:16:31.079 Yonder[85293:90b] Unlimited access to network resources
+2014-03-23 21:16:31.094 Yonder[85293:90b] [CDVTimer][file] 0.465035ms
+2014-03-23 21:16:31.095 Yonder[85293:90b] [CDVTimer][TotalPluginStartup] 1.028001ms
+2014-03-23 21:16:31.131 Yonder[85293:90b] Resetting plugins due to page load.
+2014-03-23 21:16:31.623 Yonder[85293:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 21:17:00.430 Yonder[85293:90b] Resetting plugins due to page load.
+2014-03-23 21:17:01.099 Yonder[85293:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 21:17:15.276 Yonder[85293:90b] THREAD WARNING: ['Camera'] took '47.813232' ms. Plugin should use a background thread.
+2014-03-23 21:17:18.086 Yonder[85293:190b] WriteStreamError domain: 0 error: 0
+2014-03-23 21:17:18.087 Yonder[85293:190b] FileTransferError {
+    body = "";
+    code = 3;
+    "http_status" = 0;
+    source = "file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/tmp/cdv_photo_008.jpg";
+    target = "http://0.0.0.0:3000/business/new";
+}
+2014-03-23 21:17:18.087 Yonder[85293:190b] File Transfer Error: Could not connect to the server.
+2014-03-23 21:18:34.769 Yonder[85707:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 21:18:34.776 Yonder[85707:90b] Unlimited access to network resources
+2014-03-23 21:18:34.792 Yonder[85707:90b] [CDVTimer][file] 0.465989ms
+2014-03-23 21:18:34.793 Yonder[85707:90b] [CDVTimer][TotalPluginStartup] 1.001000ms
+2014-03-23 21:18:34.831 Yonder[85707:90b] Resetting plugins due to page load.
+2014-03-23 21:18:35.322 Yonder[85707:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 21:18:47.199 Yonder[85707:90b] Resetting plugins due to page load.
+2014-03-23 21:18:47.630 Yonder[85707:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 21:19:03.036 Yonder[85707:90b] THREAD WARNING: ['Camera'] took '40.816162' ms. Plugin should use a background thread.
+2014-03-23 21:19:03.424 Yonder[85707:90b] Warning: Attempt to present <CDVCameraPicker: 0xc469800> on <MainViewController: 0xb8aac70> while a presentation is in progress!
+2014-03-23 21:19:05.783 Yonder[85707:600b] WriteStreamError domain: 0 error: 0
+2014-03-23 21:19:05.784 Yonder[85707:600b] FileTransferError {
+    body = "";
+    code = 3;
+    "http_status" = 0;
+    source = "file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/tmp/cdv_photo_009.jpg";
+    target = "http://0.0.0.0:3000/business/new";
+}
+2014-03-23 21:19:05.784 Yonder[85707:600b] File Transfer Error: Could not connect to the server.
+2014-03-23 21:19:22.341 Yonder[85707:8b1b] File Transfer Finished with response code 200
+2014-03-23 21:26:12.440 Yonder[86208:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 21:26:12.447 Yonder[86208:90b] Unlimited access to network resources
+2014-03-23 21:26:12.462 Yonder[86208:90b] [CDVTimer][file] 0.550032ms
+2014-03-23 21:26:12.463 Yonder[86208:90b] [CDVTimer][TotalPluginStartup] 1.024008ms
+2014-03-23 21:26:12.504 Yonder[86208:90b] Resetting plugins due to page load.
+2014-03-23 21:26:39.207 Yonder[86593:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 21:26:39.214 Yonder[86593:90b] Unlimited access to network resources
+2014-03-23 21:26:39.232 Yonder[86593:90b] [CDVTimer][file] 0.510991ms
+2014-03-23 21:26:39.232 Yonder[86593:90b] [CDVTimer][TotalPluginStartup] 1.101017ms
+2014-03-23 21:26:39.271 Yonder[86593:90b] Resetting plugins due to page load.
+2014-03-23 21:27:05.953 Yonder[86981:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 21:27:05.961 Yonder[86981:90b] Unlimited access to network resources
+2014-03-23 21:27:05.976 Yonder[86981:90b] [CDVTimer][file] 0.492990ms
+2014-03-23 21:27:05.977 Yonder[86981:90b] [CDVTimer][TotalPluginStartup] 1.079023ms
+2014-03-23 21:27:06.029 Yonder[86981:90b] Resetting plugins due to page load.
+2014-03-23 21:27:06.506 Yonder[86981:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 21:27:20.913 Yonder[86981:90b] Resetting plugins due to page load.
+2014-03-23 21:27:21.325 Yonder[86981:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 21:27:24.311 Yonder[86981:90b] THREAD WARNING: ['Camera'] took '41.619141' ms. Plugin should use a background thread.
+2014-03-23 21:27:26.174 Yonder[86981:6b37] File Transfer Finished with response code 200
+2014-03-23 21:31:23.503 Yonder[87437:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 21:31:23.510 Yonder[87437:90b] Unlimited access to network resources
+2014-03-23 21:31:23.525 Yonder[87437:90b] [CDVTimer][file] 0.464022ms
+2014-03-23 21:31:23.526 Yonder[87437:90b] [CDVTimer][TotalPluginStartup] 1.011014ms
+2014-03-23 21:31:23.562 Yonder[87437:90b] Resetting plugins due to page load.
+2014-03-23 21:31:23.875 Yonder[87437:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 21:31:41.704 Yonder[87437:90b] Resetting plugins due to page load.
+2014-03-23 21:31:42.247 Yonder[87437:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 21:31:44.568 Yonder[87437:90b] THREAD WARNING: ['Camera'] took '40.992920' ms. Plugin should use a background thread.
+2014-03-23 21:31:46.460 Yonder[87437:8607] File Transfer Finished with response code 200
+2014-03-23 21:36:43.895 Yonder[87907:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 21:36:43.902 Yonder[87907:90b] Unlimited access to network resources
+2014-03-23 21:36:43.918 Yonder[87907:90b] [CDVTimer][file] 0.519991ms
+2014-03-23 21:36:43.918 Yonder[87907:90b] [CDVTimer][TotalPluginStartup] 1.093984ms
+2014-03-23 21:36:43.955 Yonder[87907:90b] Resetting plugins due to page load.
+2014-03-23 21:36:44.374 Yonder[87907:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 21:37:06.242 Yonder[87907:90b] THREAD WARNING: ['Camera'] took '42.020752' ms. Plugin should use a background thread.
+2014-03-23 21:37:08.072 Yonder[87907:3d0b] File Transfer Finished with response code 200
+2014-03-23 21:37:23.977 Yonder[87907:3d0b] File Transfer Finished with response code 200
+2014-03-23 21:48:33.876 Yonder[88487:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 21:48:33.884 Yonder[88487:90b] Unlimited access to network resources
+2014-03-23 21:48:33.903 Yonder[88487:90b] [CDVTimer][file] 0.572026ms
+2014-03-23 21:48:33.904 Yonder[88487:90b] [CDVTimer][TotalPluginStartup] 1.232982ms
+2014-03-23 21:48:33.975 Yonder[88487:90b] Resetting plugins due to page load.
+2014-03-23 21:48:34.397 Yonder[88487:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 21:48:44.783 Yonder[88487:90b] THREAD WARNING: ['Camera'] took '83.910889' ms. Plugin should use a background thread.
+2014-03-23 21:48:53.551 Yonder[88487:89e7] File Transfer Finished with response code 200
+2014-03-23 21:52:40.279 Yonder[88487:90b] Warning: Attempt to present <CDVCameraPicker: 0xcacde00> on <MainViewController: 0xb866ff0> while a presentation is in progress!
+2014-03-23 21:52:42.968 Yonder[88487:941b] File Transfer Finished with response code 200
+2014-03-23 21:54:30.444 Yonder[88953:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-23 21:54:30.452 Yonder[88953:90b] Unlimited access to network resources
+2014-03-23 21:54:30.469 Yonder[88953:90b] [CDVTimer][file] 0.486016ms
+2014-03-23 21:54:30.470 Yonder[88953:90b] [CDVTimer][TotalPluginStartup] 1.116991ms
+2014-03-23 21:54:30.510 Yonder[88953:90b] Resetting plugins due to page load.
+2014-03-23 21:54:31.030 Yonder[88953:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-23 21:54:53.688 Yonder[88953:90b] THREAD WARNING: ['Camera'] took '43.303223' ms. Plugin should use a background thread.
+2014-03-23 21:54:58.735 Yonder[88953:5f07] File Transfer Finished with response code 200
+2014-03-23 23:14:07.620 Yonder[88953:3d7] File Transfer Finished with response code 200
+2014-03-24 00:14:46.700 Yonder[90026:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 00:14:46.706 Yonder[90026:90b] Unlimited access to network resources
+2014-03-24 00:14:46.723 Yonder[90026:90b] [CDVTimer][file] 0.479996ms
+2014-03-24 00:14:46.724 Yonder[90026:90b] [CDVTimer][TotalPluginStartup] 1.020014ms
+2014-03-24 00:14:46.855 Yonder[90026:90b] Resetting plugins due to page load.
+2014-03-24 00:14:47.291 Yonder[90026:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 00:18:07.792 Yonder[90450:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 00:18:07.803 Yonder[90450:90b] Unlimited access to network resources
+2014-03-24 00:18:07.823 Yonder[90450:90b] [CDVTimer][file] 0.750959ms
+2014-03-24 00:18:07.824 Yonder[90450:90b] [CDVTimer][TotalPluginStartup] 1.404047ms
+2014-03-24 00:18:07.874 Yonder[90450:90b] Resetting plugins due to page load.
+2014-03-24 00:18:08.378 Yonder[90450:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 00:19:37.306 Yonder[90849:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 00:19:37.313 Yonder[90849:90b] Unlimited access to network resources
+2014-03-24 00:19:37.328 Yonder[90849:90b] [CDVTimer][file] 0.509977ms
+2014-03-24 00:19:37.329 Yonder[90849:90b] [CDVTimer][TotalPluginStartup] 1.116991ms
+2014-03-24 00:19:37.370 Yonder[90849:90b] Resetting plugins due to page load.
+2014-03-24 00:19:37.776 Yonder[90849:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 08:03:19.799 Yonder[92226:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 08:03:19.807 Yonder[92226:90b] Unlimited access to network resources
+2014-03-24 08:03:19.831 Yonder[92226:90b] [CDVTimer][file] 0.836015ms
+2014-03-24 08:03:19.831 Yonder[92226:90b] [CDVTimer][TotalPluginStartup] 1.489997ms
+2014-03-24 08:03:19.960 Yonder[92226:90b] Resetting plugins due to page load.
+2014-03-24 08:03:20.412 Yonder[92226:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 08:04:53.988 Yonder[92628:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 08:04:53.995 Yonder[92628:90b] Unlimited access to network resources
+2014-03-24 08:04:54.012 Yonder[92628:90b] [CDVTimer][file] 0.477970ms
+2014-03-24 08:04:54.013 Yonder[92628:90b] [CDVTimer][TotalPluginStartup] 1.050949ms
+2014-03-24 08:04:54.050 Yonder[92628:90b] Resetting plugins due to page load.
+2014-03-24 08:04:54.422 Yonder[92628:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 08:05:56.833 Yonder[93023:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 08:05:56.840 Yonder[93023:90b] Unlimited access to network resources
+2014-03-24 08:05:56.863 Yonder[93023:90b] [CDVTimer][file] 0.801027ms
+2014-03-24 08:05:56.863 Yonder[93023:90b] [CDVTimer][TotalPluginStartup] 1.352012ms
+2014-03-24 08:05:56.947 Yonder[93023:90b] Resetting plugins due to page load.
+2014-03-24 08:05:57.362 Yonder[93023:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 08:10:10.909 Yonder[93461:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 08:10:10.916 Yonder[93461:90b] Unlimited access to network resources
+2014-03-24 08:10:10.937 Yonder[93461:90b] [CDVTimer][file] 0.540018ms
+2014-03-24 08:10:10.937 Yonder[93461:90b] [CDVTimer][TotalPluginStartup] 1.111031ms
+2014-03-24 08:10:10.986 Yonder[93461:90b] Resetting plugins due to page load.
+2014-03-24 08:10:11.499 Yonder[93461:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 08:16:35.855 Yonder[93930:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 08:16:35.861 Yonder[93930:90b] Unlimited access to network resources
+2014-03-24 08:16:35.879 Yonder[93930:90b] [CDVTimer][file] 0.472963ms
+2014-03-24 08:16:35.879 Yonder[93930:90b] [CDVTimer][TotalPluginStartup] 1.024961ms
+2014-03-24 08:16:35.916 Yonder[93930:90b] Resetting plugins due to page load.
+2014-03-24 08:16:36.402 Yonder[93930:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 08:21:36.605 Yonder[94377:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 08:21:36.612 Yonder[94377:90b] Unlimited access to network resources
+2014-03-24 08:21:36.627 Yonder[94377:90b] [CDVTimer][file] 0.494957ms
+2014-03-24 08:21:36.628 Yonder[94377:90b] [CDVTimer][TotalPluginStartup] 1.073003ms
+2014-03-24 08:21:36.664 Yonder[94377:90b] Resetting plugins due to page load.
+2014-03-24 08:21:37.098 Yonder[94377:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 08:23:18.400 Yonder[94777:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 08:23:18.407 Yonder[94777:90b] Unlimited access to network resources
+2014-03-24 08:23:18.423 Yonder[94777:90b] [CDVTimer][file] 0.467002ms
+2014-03-24 08:23:18.424 Yonder[94777:90b] [CDVTimer][TotalPluginStartup] 1.078963ms
+2014-03-24 08:23:18.462 Yonder[94777:90b] Resetting plugins due to page load.
+2014-03-24 08:23:18.834 Yonder[94777:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 08:25:24.698 Yonder[95189:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 08:25:24.704 Yonder[95189:90b] Unlimited access to network resources
+2014-03-24 08:25:24.720 Yonder[95189:90b] [CDVTimer][file] 0.470996ms
+2014-03-24 08:25:24.721 Yonder[95189:90b] [CDVTimer][TotalPluginStartup] 1.092017ms
+2014-03-24 08:25:24.798 Yonder[95189:90b] Resetting plugins due to page load.
+2014-03-24 08:25:25.202 Yonder[95189:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 08:30:55.073 Yonder[95645:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 08:30:55.080 Yonder[95645:90b] Unlimited access to network resources
+2014-03-24 08:30:55.098 Yonder[95645:90b] [CDVTimer][file] 0.491023ms
+2014-03-24 08:30:55.099 Yonder[95645:90b] [CDVTimer][TotalPluginStartup] 1.114011ms
+2014-03-24 08:30:55.181 Yonder[95645:90b] Resetting plugins due to page load.
+2014-03-24 08:30:55.605 Yonder[95645:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 08:38:16.625 Yonder[96126:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 08:38:16.632 Yonder[96126:90b] Unlimited access to network resources
+2014-03-24 08:38:16.652 Yonder[96126:90b] [CDVTimer][file] 0.581026ms
+2014-03-24 08:38:16.652 Yonder[96126:90b] [CDVTimer][TotalPluginStartup] 1.214981ms
+2014-03-24 08:38:16.731 Yonder[96126:90b] Resetting plugins due to page load.
+2014-03-24 08:38:17.182 Yonder[96126:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 08:39:01.726 Yonder[96519:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 08:39:01.736 Yonder[96519:90b] Unlimited access to network resources
+2014-03-24 08:39:01.768 Yonder[96519:90b] [CDVTimer][file] 1.293004ms
+2014-03-24 08:39:01.769 Yonder[96519:90b] [CDVTimer][TotalPluginStartup] 2.129018ms
+2014-03-24 08:39:01.901 Yonder[96519:90b] Resetting plugins due to page load.
+2014-03-24 08:39:02.415 Yonder[96519:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 08:42:08.326 Yonder[96961:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 08:42:08.333 Yonder[96961:90b] Unlimited access to network resources
+2014-03-24 08:42:08.352 Yonder[96961:90b] [CDVTimer][file] 0.507057ms
+2014-03-24 08:42:08.352 Yonder[96961:90b] [CDVTimer][TotalPluginStartup] 0.980020ms
+2014-03-24 08:42:08.439 Yonder[96961:90b] Resetting plugins due to page load.
+2014-03-24 08:42:08.877 Yonder[96961:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 08:45:50.715 Yonder[97394:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 08:45:50.723 Yonder[97394:90b] Unlimited access to network resources
+2014-03-24 08:45:50.741 Yonder[97394:90b] [CDVTimer][file] 0.518024ms
+2014-03-24 08:45:50.742 Yonder[97394:90b] [CDVTimer][TotalPluginStartup] 1.084030ms
+2014-03-24 08:45:50.780 Yonder[97394:90b] Resetting plugins due to page load.
+2014-03-24 08:45:51.255 Yonder[97394:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 09:06:13.887 Yonder[98027:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 09:06:13.895 Yonder[98027:90b] Unlimited access to network resources
+2014-03-24 09:06:13.912 Yonder[98027:90b] [CDVTimer][file] 0.483990ms
+2014-03-24 09:06:13.913 Yonder[98027:90b] [CDVTimer][TotalPluginStartup] 1.121998ms
+2014-03-24 09:06:13.951 Yonder[98027:90b] Resetting plugins due to page load.
+2014-03-24 09:06:14.371 Yonder[98027:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 09:10:50.685 Yonder[98477:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 09:10:50.691 Yonder[98477:90b] Unlimited access to network resources
+2014-03-24 09:10:50.707 Yonder[98477:90b] [CDVTimer][file] 0.493944ms
+2014-03-24 09:10:50.707 Yonder[98477:90b] [CDVTimer][TotalPluginStartup] 1.089036ms
+2014-03-24 09:10:50.743 Yonder[98477:90b] Resetting plugins due to page load.
+2014-03-24 09:10:51.166 Yonder[98477:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 09:13:26.480 Yonder[98896:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 09:13:26.487 Yonder[98896:90b] Unlimited access to network resources
+2014-03-24 09:13:26.503 Yonder[98896:90b] [CDVTimer][file] 0.474989ms
+2014-03-24 09:13:26.504 Yonder[98896:90b] [CDVTimer][TotalPluginStartup] 1.098990ms
+2014-03-24 09:13:26.543 Yonder[98896:90b] Resetting plugins due to page load.
+2014-03-24 09:13:27.321 Yonder[98896:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 09:14:50.348 Yonder[99298:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 09:14:50.355 Yonder[99298:90b] Unlimited access to network resources
+2014-03-24 09:14:50.373 Yonder[99298:90b] [CDVTimer][file] 0.486016ms
+2014-03-24 09:14:50.373 Yonder[99298:90b] [CDVTimer][TotalPluginStartup] 1.032948ms
+2014-03-24 09:14:50.421 Yonder[99298:90b] Resetting plugins due to page load.
+2014-03-24 09:14:51.170 Yonder[99298:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 09:14:58.200 Yonder[99298:90b] THREAD WARNING: ['Camera'] took '105.891846' ms. Plugin should use a background thread.
+2014-03-24 09:15:03.748 Yonder[99298:1403] File Transfer Finished with response code 200
+2014-03-24 09:15:37.327 Yonder[99298:620b] File Transfer Finished with response code 200
+2014-03-24 09:24:28.529 Yonder[99835:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 09:24:28.538 Yonder[99835:90b] Unlimited access to network resources
+2014-03-24 09:24:28.558 Yonder[99835:90b] [CDVTimer][file] 0.864983ms
+2014-03-24 09:24:28.559 Yonder[99835:90b] [CDVTimer][TotalPluginStartup] 1.922965ms
+2014-03-24 09:24:28.612 Yonder[99835:90b] Resetting plugins due to page load.
+2014-03-24 09:24:29.151 Yonder[99835:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
+2014-03-24 09:25:43.164 Yonder[368:90b] Multi-tasking -> Device: YES, App: YES
+2014-03-24 09:25:43.173 Yonder[368:90b] Unlimited access to network resources
+2014-03-24 09:25:43.194 Yonder[368:90b] [CDVTimer][file] 0.738978ms
+2014-03-24 09:25:43.194 Yonder[368:90b] [CDVTimer][TotalPluginStartup] 1.378000ms
+2014-03-24 09:25:43.240 Yonder[368:90b] Resetting plugins due to page load.
+2014-03-24 09:25:43.763 Yonder[368:90b] Finished load of: file:///Users/Vasenka/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/46EB4DAA-4267-44C4-B49A-FD455B5F1393/Yonder.app/www/index.html
