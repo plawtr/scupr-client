@@ -58,24 +58,59 @@
     <script id='form-template' type='text/x-handlebars-template'>
       <form id='new-business'>
         <div class='list'>
+          <div class='item item-divider'>
+            Business details
+          </div>
           <label class='item item-input'>
-            <input name='business-name' placeholder='Business name' type='text'>
+            <span class='input-label'>
+              Company
+            </span>
+            <input name='business-name' required type='text' value='{{business.name}}'>
           </label>
           <label class='item item-input'>
-            <input name='ad-caption' placeholder='Caption' type='text'>
+            <span class='input-label'>
+              Telephone
+            </span>
+            <input name='business-phone' type='text' value='{{business.phone}}'>
           </label>
           <label class='item item-input'>
-            <input name='business-radius' placeholder='Radius' type='text'>
+            <span class='input-label'>
+              Radius
+            </span>
+            <input name='business-radius' readonly type='text' value='{{business.radius}}'>
           </label>
           <label class='item item-input'>
-            <input name='business-lng' placeholder='Lng' type='text'>
+            <span class='input-label'>
+              Latitude
+            </span>
+            <input name='business-lat' readonly type='text' value='{{business.lat}}'>
           </label>
           <label class='item item-input'>
-            <input name='business-lat' placeholder='Lat' type='text'>
+            <span class='input-label'>
+              Longitude
+            </span>
+            <input name='business-lng' readonly type='text' value='{{business.lng}}'>
+          </label>
+          <div class='item item-divider'>
+            Current ad details
+          </div>
+          <label class='item item-thumbnail-left'>
+            <img src='{{business.ad.bucket_image}}'>
+            <h2>{{business.name}}</h2>
+            <p>{{business.ad.caption}}</p>
+          </label>
+          <div class='item item-divider'>
+            New ad
+          </div>
+          <label class='item item-input'>
+            <span class='input-label'>
+              Caption
+            </span>
+            <input name='ad-caption' required type='text' value='{{business.ad.caption}}'>
           </label>
           <div style='padding: 10px;'>
             <button class='button button-block icon-right ion-chevron-right button-positive' id='submit-new' onclick='selectPhoto();'>
-              Add Image and Submit
+              Select Image and Submit
             </button>
           </div>
         </div>

@@ -78,13 +78,6 @@ roundDistanceOfAd = function(data) {
   return data;
 };
 
-getBusinessForm = function() {
-  var source, template;
-  source = $("#form-template").html();
-  template = Handlebars.compile(source);
-  return $('#bucket').html(template());
-};
-
 selectPhoto = function() {
   var photoOptions;
   event.preventDefault();
@@ -103,8 +96,6 @@ onPictureFail = function(message) {
 
 uploadPhoto = function(imageURI) {
   var ft, input, options, params, _i, _len, _ref;
-  console.log("point 4");
-  console.log(imageURI);
   options = new FileUploadOptions();
   options.fileKey = "file";
   options.fileName = imageURI.substr(imageURI.lastIndexOf('/') + 1);
@@ -123,7 +114,8 @@ uploadPhoto = function(imageURI) {
 onTransferSuccess = function(r) {
   console.log("Code = " + r.responseCode);
   console.log("Response = " + r.response);
-  return console.log("Sent = " + r.bytesSent);
+  console.log("Sent = " + r.bytesSent);
+  return window.localStorage.setItem("business", r.response);
 };
 
 onTransferFail = function(error) {
@@ -134,4 +126,23 @@ onTransferFail = function(error) {
 
 shareAdSocially = function() {
   return window.plugins.socialsharing.share("Hey, check out " + ($('h2')[0].textContent) + " away from me right now: " + ($('p')[0].textContent) + ".", 'Уonder!', $('img')[0].src, 'https://itunes.apple.com/gb/app/facebook/id284882215');
+};
+
+getBusinessForm = function() {
+  return navigator.geolocation.getCurrentPosition(function(position) {
+    var cookie, source, template;
+    cookie = JSON.parse(window.localStorage.getItem("business"));
+    if (cookie === null) {
+      cookie = {
+        business: {
+          radius: 500,
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        }
+      };
+    }
+    source = $("#form-template").html();
+    template = Handlebars.compile(source);
+    return $('#bucket').html(template(cookie));
+  }, onGPSError);
 };

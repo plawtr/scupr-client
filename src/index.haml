@@ -57,20 +57,42 @@
     %script{id: 'form-template', type: 'text/x-handlebars-template'}
       %form{id: 'new-business'}
         .list
+          .item.item-divider
+            Business details
           %label.item.item-input
-            %input{type: "text",  placeholder: "Business name", name: 'business-name'}
+            %span.input-label
+              Company
+            %input{type: "text", name: "business-name", value: "{{business.name}}", required: true}
           %label.item.item-input
-            %input{type: "text",  placeholder: "Caption", name: 'ad-caption'}
+            %span.input-label
+              Telephone
+            %input{type: "text", name: "business-phone", value: "{{business.phone}}"}
           %label.item.item-input
-            %input{type: "text",  placeholder: "Radius", name: 'business-radius'}
+            %span.input-label
+              Radius
+            %input{type: "text", name: "business-radius", readonly: true, value: "{{business.radius}}"}
           %label.item.item-input
-            %input{type: "text",  placeholder: "Lng", name: 'business-lng'}
+            %span.input-label
+              Latitude
+            %input{type: "text", name: "business-lat", readonly: true, value: "{{business.lat}}"}
           %label.item.item-input
-            %input{type: "text",  placeholder: "Lat", name: 'business-lat'}
+            %span.input-label
+              Longitude
+            %input{type: "text", name: "business-lng", readonly: true, value: "{{business.lng}}"}
+          .item.item-divider Current ad details
+          %label.item.item-thumbnail-left
+            %img{src: "{{business.ad.bucket_image}}"}
+            %h2 {{business.name}}
+            %p {{business.ad.caption}}
+          .item.item-divider
+            New ad
+          %label.item.item-input
+            %span.input-label
+              Caption
+            %input{type: "text", name: "ad-caption", value: "{{business.ad.caption}}", required: true}
           %div{style: "padding: 10px;"}  
             %button.button.button-block.icon-right.ion-chevron-right.button-positive{id: "submit-new", onclick: "selectPhoto();"}
-              Add Image and Submit    
-
+              Select Image and Submit
     %script{type: "text/javascript", src: "js/local.js"}
     %script{type: "text/javascript", src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyA_PXRhcYPHapEnqn_xw3_6gnIne0zJMXg&sensor=true"}
     %script{type: "text/javascript", src: "js/maps_local.js"}
