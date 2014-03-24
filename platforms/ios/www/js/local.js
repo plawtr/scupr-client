@@ -27,7 +27,8 @@ fillBucket = function(data) {
   var source, template;
   source = $("#bucket-template").html();
   template = Handlebars.compile(source);
-  return $('#bucket').html(template(roundDistanceForAds(data)));
+  $('#bucket').html(template(roundDistanceForAds(data)));
+  return window.scrollTo(0, 0);
 };
 
 fillAd = function(data) {

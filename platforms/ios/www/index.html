@@ -91,9 +91,7 @@
             </span>
             <input name='business-lng' readonly type='text' value='{{business.lng}}'>
           </label>
-          <div class='item item-divider'>
-            Current ad details
-          </div>
+          <div class='item item-divider'>Current ad details</div>
           <label class='item item-thumbnail-left'>
             <img src='{{business.ad.bucket_image}}'>
             <h2>{{business.name}}</h2>
@@ -108,6 +106,7 @@
             </span>
             <input name='ad-caption' required type='text' value='{{business.ad.caption}}'>
           </label>
+          <input name='business-id' type='hidden' value='{{business.id}}'>
           <div style='padding: 10px;'>
             <button class='button button-block icon-right ion-chevron-right button-positive' id='submit-new' onclick='selectPhoto();'>
               Select Image and Submit

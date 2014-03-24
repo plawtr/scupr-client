@@ -19,6 +19,7 @@ fillBucket = (data)->
 	source = $("#bucket-template").html()
 	template = Handlebars.compile(source)
 	$('#bucket').html(template(roundDistanceForAds(data)))
+	window.scrollTo(0,0)
 
 fillAd = (data)->
 	source = $("#ad-template").html()
