@@ -16,7 +16,7 @@ stripeResponseHandler = (status, response)->
     $form.append($('<input type="hidden" name="business-id" />').val(cookie.business.id))
     # $form.get(0).submit()
     data = $form.serializeArray()
-    $.post("http:localhost:3000/payment", data, onTransferSuccess)
+    $.post("http:localhost:3000/payment", data, onStripeSuccess)
 
 
 handleStripe = ()->
@@ -32,3 +32,7 @@ handleStripe = ()->
 
   # Prevent the form from submitting with the default action
   false
+
+onStripeSuccess = (data)->
+  console.log(JSON.stringify(data))
+  window.localStorage.setItem("business", JSON.stringify(data))
