@@ -115,14 +115,45 @@
         </div>
       </form>
       <div style='padding: 10px;'>
+        <button class='button button-block icon-right ion-chevron-right button-balanced' id='stripe' onclick='getStripeForm();'>
+          Quadruple your reach
+        </button>
+      </div>
+      <div style='padding: 10px;'>
         <button class='button button-block icon-right ion-chevron-right button-assertive' id='log-out' onclick='killMeNow();'>
           Log out
         </button>
       </div>
     </script>
+    <script id='stripe-template' type='text/x-handlebars-template'>
+      <form action='' id='stripe-form' method='POST'>
+        <div class='list'>
+          <label class='item item-input'>
+            <input autocomplete='off' data-stripe='number' maxlength='20' placeholder='Card number' type='text'>
+          </label>
+          <label class='item item-input'>
+            <input autocomplete='off' data-stripe='cvc' maxlength='4' placeholder='CVC' type='text'>
+          </label>
+          <label class='item item-input'>
+            <input autocomplete='off' data-stripe='exp-month' maxlength='2' placeholder='MM' type='text'>
+          </label>
+          <label class='item item-input'>
+            <input autocomplete='off' data-stripe='exp-year' maxlength='4' placeholder='YYYY' type='text'>
+          </label>
+        </div>
+        <div style='padding: 10px;'>
+          <button name='submit-button' onclick='handleStripe();' type='submit'>
+            Submit Payment
+          </button>
+        </div>
+        <span class='payment-errors'></span>
+      </form>
+    </script>
     <script src='js/local.js' type='text/javascript'></script>
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA_PXRhcYPHapEnqn_xw3_6gnIne0zJMXg&amp;sensor=true' type='text/javascript'></script>
     <script src='js/maps_local.js' type='text/javascript'></script>
+    <script src='https://js.stripe.com/v1/' type='text/javascript'></script>
+    <script src='js/stripe_local.js' type='text/javascript'></script>
     <script>
       document.addEventListener("deviceready", startApp, false);
     </script>

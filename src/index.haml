@@ -94,8 +94,28 @@
             %button.button.button-block.icon-right.ion-chevron-right.button-positive{id: "submit-new", onclick: "selectPhoto();"}
               Select Image and Submit
       %div{style: "padding: 10px;"}  
+        %button.button.button-block.icon-right.ion-chevron-right.button-balanced{id: "stripe", onclick: "getStripeForm();"}
+          Quadruple your reach               
+      %div{style: "padding: 10px;"}  
         %button.button.button-block.icon-right.ion-chevron-right.button-assertive{id: "log-out", onclick: "killMeNow();"}
-          Log out    
+          Log out 
+
+    %script{id: 'stripe-template', type: 'text/x-handlebars-template'}
+      %form{id: 'stripe-form', action: "", method: "POST"}
+        .list
+          %label.item.item-input  
+            %input{type: "text", maxlength: "20", autocomplete: "off", placeholder: "Card number", "data-stripe" => "number"}
+          %label.item.item-input
+            %input{type: "text", maxlength: "4", autocomplete: "off", placeholder: "CVC", "data-stripe" => "cvc"}
+          %label.item.item-input  
+            %input{type: "text", maxlength: "2", autocomplete: "off", placeholder: "MM", "data-stripe" => "exp-month"}
+          %label.item.item-input  
+            %input{type: "text", maxlength: "4", autocomplete: "off", placeholder: "YYYY", "data-stripe" => "exp-year"}
+        %div{style: "padding: 10px;"} 
+          %button{type: "submit", name: "submit-button", onclick: "handleStripe();"} 
+            Submit Payment
+        %span.payment-errors  
+
     %script{type: "text/javascript", src: "js/local.js"}
     %script{type: "text/javascript", src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyA_PXRhcYPHapEnqn_xw3_6gnIne0zJMXg&sensor=true"}
     %script{type: "text/javascript", src: "js/maps_local.js"}

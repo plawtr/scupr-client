@@ -127,3 +127,9 @@ killMeNow = ()->
 
 getPassbook = ()-> 
 	Passbook.downloadPass('https://s3.amazonaws.com/scupr/pass/new.pkpass')
+
+getStripeForm = ()->
+	source = $("#stripe-template").html()
+	template = Handlebars.compile(source)
+	$('#bucket').html(template())
+
