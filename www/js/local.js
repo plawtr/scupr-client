@@ -132,8 +132,9 @@ shareAdSocially = function() {
 
 getBusinessForm = function() {
   return navigator.geolocation.getCurrentPosition(function(position) {
-    var cookie, source, template;
+    var cookie, noEmptyFieldsOrButtons, source, template;
     cookie = JSON.parse(window.localStorage.getItem("business"));
+    noEmptyFieldsOrButtons = false;
     if (cookie === null) {
       cookie = {
         business: {
@@ -142,10 +143,16 @@ getBusinessForm = function() {
           lng: position.coords.longitude
         }
       };
+      noEmptyFieldsOrButtons = true;
     }
     source = $("#form-template").html();
     template = Handlebars.compile(source);
-    return $('#bucket').html(template(cookie));
+    $('#bucket').html(template(cookie));
+    if (noEmptyFieldsOrButtons === true) {
+      $("#stripe")[0].style.display = 'none';
+      $(".item-divider")[1].style.display = 'none';
+      return $(".item-thumbnail-left")[0].style.display = 'none';
+    }
   }, onGPSError);
 };
 

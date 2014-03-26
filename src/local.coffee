@@ -107,6 +107,7 @@ shareAdSocially = ()->
 getBusinessForm = ()->
 	navigator.geolocation.getCurrentPosition((position)->
 		cookie = JSON.parse(window.localStorage.getItem("business"))
+		noEmptyFieldsOrButtons = false
 		if cookie == null 
 			cookie = {
 			business: 
@@ -116,9 +117,15 @@ getBusinessForm = ()->
 				lng: position.coords.longitude
 				}
 			}
+			noEmptyFieldsOrButtons = true
+
 		source = $("#form-template").html()
 		template = Handlebars.compile(source)
 		$('#bucket').html(template(cookie))
+		if noEmptyFieldsOrButtons == true
+			$("#stripe")[0].style.display='none'
+			$(".item-divider")[1].style.display='none'
+			$(".item-thumbnail-left")[0].style.display='none'
 	, onGPSError)
 
 killMeNow = ()->

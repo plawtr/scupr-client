@@ -22,7 +22,6 @@ stripeResponseHandler = function(status, response) {
 handleStripe = function() {
   var $form;
   event.preventDefault();
-  console.log("one");
   $form = $('#stripe-form');
   $form.find('button').prop('disabled', true);
   Stripe.card.createToken($form, stripeResponseHandler);
@@ -30,6 +29,7 @@ handleStripe = function() {
 };
 
 onStripeSuccess = function(data) {
-  console.log(JSON.stringify(data));
-  return window.localStorage.setItem("business", JSON.stringify(data));
+  window.localStorage.setItem("business", JSON.stringify(data));
+  navigator.notification.alert("Radius successfully updated", getBucketWithGPS(), "Payment Details");
+  return getBucketWithGPS();
 };

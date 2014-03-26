@@ -21,8 +21,6 @@ stripeResponseHandler = (status, response)->
 
 handleStripe = ()->
   event.preventDefault()
-
-  console.log("one")
   $form = $('#stripe-form')
 
   # Disable the submit button to prevent repeated clicks
@@ -34,5 +32,6 @@ handleStripe = ()->
   false
 
 onStripeSuccess = (data)->
-  console.log(JSON.stringify(data))
   window.localStorage.setItem("business", JSON.stringify(data))
+  navigator.notification.alert("Radius successfully updated", getBucketWithGPS(), "Payment Details")
+  getBucketWithGPS()
