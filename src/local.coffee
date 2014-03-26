@@ -87,13 +87,15 @@ uploadPhoto = (imageURI)->
 	options.params = params
 
 	ft = new FileTransfer()
-	ft.upload(imageURI, encodeURI("http:0.0.0.0:3000/business/new"), onTransferSuccess, onTransferFail, options)
+	ft.upload(imageURI, encodeURI("http:scupr-staging.herokuapp.com/business/new"), onTransferSuccess, onTransferFail, options)
 
 onTransferSuccess = (r)->
 	console.log("Code = " + r.responseCode)
 	console.log("Response = " + r.response)
 	console.log("Sent = " + r.bytesSent)
 	window.localStorage.setItem("business", r.response)
+	alert("Business and ad details uploaded")
+	getBucketWithGPS()
 
 onTransferFail = (error)->
 	alert("An error has occurred: Code = " + error.code)
@@ -101,7 +103,7 @@ onTransferFail = (error)->
 	console.log("upload error target " + error.target)
 
 shareAdSocially = ()->
-	window.plugins.socialsharing.share("Hey, check out #{$('h2')[0].textContent} away from me right now: #{$('p')[0].textContent}.", 'Уonder!', $('img')[0].src, 'https://itunes.apple.com/gb/app/facebook/id284882215')
+	window.plugins.socialsharing.share("Hey, check out #{$('h2')[0].textContent} away from me right now: #{$('p')[0].textContent}. #Уonder!", 'Уonder!', $('img')[0].src)
 
 getBusinessForm = ()->
 	navigator.geolocation.getCurrentPosition((position)->
@@ -119,3 +121,8 @@ getBusinessForm = ()->
 		template = Handlebars.compile(source)
 		$('#bucket').html(template(cookie))
 	, onGPSError)
+
+killMeNow = ()->
+	window.localStorage.setItem("business",  null)
+	getBucketWithGPS()
+

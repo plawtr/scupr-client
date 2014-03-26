@@ -34,7 +34,7 @@
           <img class='full-mage' src='{{ad.image}}'>
         </div>
         <div class='item tabs tabs-secondary tabs-icon-left'>
-          <a class='tab-item' href='#'>
+          <a class='tab-item' href='tel: {{ad.business_phone}}'>
             <i class='icon ion-ios7-telephone-outline'></i>
             Call
           </a>
@@ -114,6 +114,11 @@
           </div>
         </div>
       </form>
+      <div style='padding: 10px;'>
+        <button class='button button-block icon-right ion-chevron-right button-assertive' id='log-out' onclick='killMeNow();'>
+          Log out
+        </button>
+      </div>
     </script>
     <script src='js/local.js' type='text/javascript'></script>
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA_PXRhcYPHapEnqn_xw3_6gnIne0zJMXg&amp;sensor=true' type='text/javascript'></script>

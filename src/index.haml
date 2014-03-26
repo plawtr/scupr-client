@@ -37,7 +37,7 @@
         .item.item-image
           %img.full-mage{src: "{{ad.image}}"}
         .item.tabs.tabs-secondary.tabs-icon-left
-          %a.tab-item{href: "#"}
+          %a.tab-item{href: "tel: {{ad.business_phone}}"}
             %i.icon.ion-ios7-telephone-outline
             Call
           %a.tab-item{href: "#"}
@@ -93,6 +93,9 @@
           %div{style: "padding: 10px;"}  
             %button.button.button-block.icon-right.ion-chevron-right.button-positive{id: "submit-new", onclick: "selectPhoto();"}
               Select Image and Submit
+      %div{style: "padding: 10px;"}  
+        %button.button.button-block.icon-right.ion-chevron-right.button-assertive{id: "log-out", onclick: "killMeNow();"}
+          Log out    
     %script{type: "text/javascript", src: "js/local.js"}
     %script{type: "text/javascript", src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyA_PXRhcYPHapEnqn_xw3_6gnIne0zJMXg&sensor=true"}
     %script{type: "text/javascript", src: "js/maps_local.js"}
