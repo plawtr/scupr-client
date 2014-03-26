@@ -94,11 +94,10 @@ onTransferSuccess = (r)->
 	console.log("Response = " + r.response)
 	console.log("Sent = " + r.bytesSent)
 	window.localStorage.setItem("business", r.response)
-	alert("Business and ad details uploaded")
-	getBucketWithGPS()
+	navigator.notification.alert("Successfully uploaded", getBucketWithGPS(), "Business and Ad Details")
 
 onTransferFail = (error)->
-	alert("An error has occurred: Code = " + error.code)
+	navigator.notification.alert("Code = " + error.code, $.noop, "An error has occurred")
 	console.log("upload error source " + error.source)
 	console.log("upload error target " + error.target)
 
@@ -126,3 +125,5 @@ killMeNow = ()->
 	window.localStorage.setItem("business",  null)
 	getBucketWithGPS()
 
+getPassbook = ()-> 
+	Passbook.downloadPass('https://s3.amazonaws.com/scupr/pass/new.pkpass')
