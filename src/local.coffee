@@ -19,6 +19,7 @@ fillBucket = (data)->
 	source = $("#bucket-template").html()
 	template = Handlebars.compile(source)
 	$('#bucket').html(template(roundDistanceForAds(data)))
+	window.scrollTo(0,0)
 
 fillAd = (data)->
 	source = $("#ad-template").html()
@@ -60,28 +61,6 @@ roundDistanceForAds = (data)->
 roundDistanceOfAd = (data)->
 	data.ad.distance = Math.round(data.ad.distance*1000)
 	data
-
-# window.addEventListener("statusTap", ()->
-# 	alert("status tap")
-# 	document.body.scrollTop = 0
-# 	window.scrollTo(0,0)
-# )
-
-getBusinessForm = ()->
-	source = $("#form-template").html()
-	template = Handlebars.compile(source)
-	$('#bucket').html(template())
-
-# postNewBusiness = ()-> 	
-# 	alert('submiting')
-# 	event.preventDefault()
-# 	params = $('#new-business').serializeArray()
-# 	console.log(params)
-# 	$.post("http:0.0.0.0:3000/business/new", params, successPost(), "json")
-
-# successPost = ()->
-# 	alert("sending data")
-
  
 selectPhoto = ()->
 	event.preventDefault()
@@ -97,9 +76,6 @@ onPictureFail = (message)->
 	console.log('Failed because: ' + message)
 
 uploadPhoto = (imageURI)-> 
-	console.log("point 4")
-	console.log(imageURI)
-
 	options = new FileUploadOptions()
 	options.fileKey="file"
 	options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1)
@@ -111,19 +87,49 @@ uploadPhoto = (imageURI)->
 	options.params = params
 
 	ft = new FileTransfer()
-	ft.upload(imageURI, encodeURI("http:0.0.0.0:3000/business/new"), onTransferSuccess, onTransferFail, options)
+	ft.upload(imageURI, encodeURI("http:scupr-staging.herokuapp.com/business/new"), onTransferSuccess, onTransferFail, options)
 
 onTransferSuccess = (r)->
 	console.log("Code = " + r.responseCode)
 	console.log("Response = " + r.response)
 	console.log("Sent = " + r.bytesSent)
+	window.localStorage.setItem("business", r.response)
+	navigator.notification.alert("Successfully uploaded", getBucketWithGPS(), "Business and Ad Details")
 
 onTransferFail = (error)->
-	alert("An error has occurred: Code = " + error.code)
+	navigator.notification.alert("Code = " + error.code, $.noop, "An error has occurred")
 	console.log("upload error source " + error.source)
 	console.log("upload error target " + error.target)
 
 shareAdSocially = ()->
-	window.plugins.socialsharing.share("Hey, check out #{$('h2')[0].textContent} away from me right now: #{$('p')[0].textContent}.", 'Уonder!', $('img')[0].src, 'https://itunes.apple.com/gb/app/facebook/id284882215')
+	window.plugins.socialsharing.share("Hey, check out #{$('h2')[0].textContent} away from me right now: #{$('p')[0].textContent}. #Уonder!", 'Уonder!', $('img')[0].src)
 
+getBusinessForm = ()->
+	navigator.geolocation.getCurrentPosition((position)->
+		cookie = JSON.parse(window.localStorage.getItem("business"))
+		if cookie == null 
+			cookie = {
+			business: 
+				{
+				radius: 500,
+				lat: position.coords.latitude,
+				lng: position.coords.longitude
+				}
+			}
+		source = $("#form-template").html()
+		template = Handlebars.compile(source)
+		$('#bucket').html(template(cookie))
+	, onGPSError)
+
+killMeNow = ()->
+	window.localStorage.setItem("business",  null)
+	getBucketWithGPS()
+
+getPassbook = ()-> 
+	Passbook.downloadPass('https://s3.amazonaws.com/scupr/pass/new.pkpass')
+
+getStripeForm = ()->
+	source = $("#stripe-template").html()
+	template = Handlebars.compile(source)
+	$('#bucket').html(template())
 

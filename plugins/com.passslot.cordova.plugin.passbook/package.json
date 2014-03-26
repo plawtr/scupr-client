@@ -1,0 +1,13 @@
+{
+    "version": "0.1.0",
+    "name": "com.passslot.cordova.plugin.passbook",
+    "cordova_name": "Passbook",
+    "description": "This plugin allows you to add passes to Passbook",
+    "license": "Apache 2.0",
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ]
+}

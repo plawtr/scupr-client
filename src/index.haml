@@ -17,7 +17,6 @@
           %i{style:"font-family: georgia; font-style: italic; font-size: 110%;"}>< !
       %button.button.button-icon.icon.ion-ios7-refresh-empty{onclick: "getBucketWithGPS();"} 
     %ion-content#bucket{"has-header" => "true", "overflow-scroll" => "true", style: "width: 100%; height: 100%+10px;"}
-      
   
     %script{type: "text/javascript", src: "cordova.js"}
     %script{type: "text/javascript", src: "js/jquery.js"}
@@ -38,12 +37,12 @@
         .item.item-image
           %img.full-mage{src: "{{ad.image}}"}
         .item.tabs.tabs-secondary.tabs-icon-left
-          %a.tab-item{href: "#"}
+          %a.tab-item{href: "tel: {{ad.business_phone}}"}
             %i.icon.ion-ios7-telephone-outline
             Call
-          %a.tab-item{href: "#"}
-            %i.icon.ion-social-twitter-outline
-            Tweet
+          %a.tab-item{href: "#", onclick: "getPassbook();"}
+            %i.icon.ion-ios7-pricetag-outline
+            Loyalty Card
           %a.tab-item{href: "#", onclick: "shareAdSocially();"}
             %i.icon.ion-ios7-paperplane-outline
             Share
@@ -57,23 +56,71 @@
     %script{id: 'form-template', type: 'text/x-handlebars-template'}
       %form{id: 'new-business'}
         .list
+          .item.item-divider
+            Business details
           %label.item.item-input
-            %input{type: "text",  placeholder: "Business name", name: 'business-name'}
+            %span.input-label
+              Company
+            %input{type: "text", name: "business-name", value: "{{business.name}}", required: true}
           %label.item.item-input
-            %input{type: "text",  placeholder: "Caption", name: 'ad-caption'}
+            %span.input-label
+              Telephone
+            %input{type: "text", name: "business-phone", value: "{{business.phone}}"}
           %label.item.item-input
-            %input{type: "text",  placeholder: "Radius", name: 'business-radius'}
+            %span.input-label
+              Radius
+            %input{type: "text", name: "business-radius", readonly: true, value: "{{business.radius}}"}
           %label.item.item-input
-            %input{type: "text",  placeholder: "Lng", name: 'business-lng'}
+            %span.input-label
+              Latitude
+            %input{type: "text", name: "business-lat", readonly: true, value: "{{business.lat}}"}
           %label.item.item-input
-            %input{type: "text",  placeholder: "Lat", name: 'business-lat'}
+            %span.input-label
+              Longitude
+            %input{type: "text", name: "business-lng", readonly: true, value: "{{business.lng}}"}
+          .item.item-divider Current ad details
+          %label.item.item-thumbnail-left
+            %img{src: "{{business.ad.bucket_image}}"}
+            %h2 {{business.name}}
+            %p {{business.ad.caption}}
+          .item.item-divider
+            New ad
+          %label.item.item-input
+            %span.input-label
+              Caption
+            %input{type: "text", name: "ad-caption", value: "{{business.ad.caption}}", required: true}
+          %input{type: "hidden", name: "business-id", value: "{{business.id}}"}  
           %div{style: "padding: 10px;"}  
             %button.button.button-block.icon-right.ion-chevron-right.button-positive{id: "submit-new", onclick: "selectPhoto();"}
-              Add Image and Submit    
+              Select Image and Submit
+      %div{style: "padding: 10px;"}  
+        %button.button.button-block.icon-right.ion-chevron-right.button-balanced{id: "stripe", onclick: "getStripeForm();"}
+          Quadruple your reach               
+      %div{style: "padding: 10px;"}  
+        %button.button.button-block.icon-right.ion-chevron-right.button-assertive{id: "log-out", onclick: "killMeNow();"}
+          Log out 
+
+    %script{id: 'stripe-template', type: 'text/x-handlebars-template'}
+      %form{id: 'stripe-form', action: "", method: "POST"}
+        .list
+          %label.item.item-input  
+            %input{type: "text", maxlength: "20", autocomplete: "off", placeholder: "Card number", "data-stripe" => "number"}
+          %label.item.item-input
+            %input{type: "text", maxlength: "4", autocomplete: "off", placeholder: "CVC", "data-stripe" => "cvc"}
+          %label.item.item-input  
+            %input{type: "text", maxlength: "2", autocomplete: "off", placeholder: "MM", "data-stripe" => "exp-month"}
+          %label.item.item-input  
+            %input{type: "text", maxlength: "4", autocomplete: "off", placeholder: "YYYY", "data-stripe" => "exp-year"}
+        %div{style: "padding: 10px;"} 
+          %button{type: "submit", name: "submit-button", onclick: "handleStripe();"} 
+            Submit Payment
+        %span.payment-errors  
 
     %script{type: "text/javascript", src: "js/local.js"}
     %script{type: "text/javascript", src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyA_PXRhcYPHapEnqn_xw3_6gnIne0zJMXg&sensor=true"}
     %script{type: "text/javascript", src: "js/maps_local.js"}
+    %script{type: "text/javascript", src: "https://js.stripe.com/v1/"}
+    %script{type: "text/javascript", src: "js/stripe_local.js"}
     %script
       document.addEventListener("deviceready", startApp, false);
     

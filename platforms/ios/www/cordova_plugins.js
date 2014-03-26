@@ -212,6 +212,20 @@ module.exports = [
         "clobbers": [
             "window.plugins.socialsharing"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
+        "id": "org.apache.cordova.dialogs.notification",
+        "merges": [
+            "navigator.notification"
+        ]
+    },
+    {
+        "file": "plugins/com.passslot.cordova.plugin.passbook/www/passbook.js",
+        "id": "com.passslot.cordova.plugin.passbook.passbook",
+        "clobbers": [
+            "Passbook"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -221,7 +235,9 @@ module.exports.metadata =
     "org.apache.cordova.camera": "0.2.8",
     "org.apache.cordova.file": "1.0.1",
     "org.apache.cordova.file-transfer": "0.4.2",
-    "nl.x-services.plugins.socialsharing": "4.0.7"
+    "nl.x-services.plugins.socialsharing": "4.0.7",
+    "org.apache.cordova.dialogs": "0.2.6",
+    "com.passslot.cordova.plugin.passbook": "0.1.0"
 }
 // BOTTOM OF METADATA
 });

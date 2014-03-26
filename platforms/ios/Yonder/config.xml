@@ -25,6 +25,9 @@
     <feature name="SocialSharing">
         <param name="ios-package" value="SocialSharing" />
     </feature>
+    <feature name="Passbook">
+        <param name="ios-package" value="CDVPassbook" />
+    </feature>
     <name>Yonder</name>
     <description>
         A geolocational application that is a lot of fun to use to discover things locally.
@@ -42,6 +45,9 @@
     </feature>
     <feature name="FileTransfer">
         <param name="ios-package" value="CDVFileTransfer" />
+    </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
     </feature>
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
