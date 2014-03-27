@@ -15,7 +15,7 @@ stripeResponseHandler = function(status, response) {
     cookie = JSON.parse(window.localStorage.getItem("business"));
     $form.append($('<input type="hidden" name="business-id" />').val(cookie.business.id));
     data = $form.serializeArray();
-    return $.post("http:localhost:3000/payment", data, onStripeSuccess);
+    return $.post("http:scupr-staging.herokuapp.com/payment", data, onStripeSuccess);
   }
 };
 

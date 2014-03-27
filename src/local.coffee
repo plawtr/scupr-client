@@ -65,7 +65,7 @@ roundDistanceOfAd = (data)->
 selectPhoto = ()->
 	event.preventDefault()
 	photoOptions = {
-			quality         : 100,
+			quality         : 50,
 			destinationType : navigator.camera.DestinationType.FILE_URI,
 			sourceType      : navigator.camera.PictureSourceType.PHOTOLIBRARY
 	}
@@ -136,6 +136,7 @@ getPassbook = ()->
 	Passbook.downloadPass('https://s3.amazonaws.com/scupr/pass/new.pkpass')
 
 getStripeForm = ()->
+	event.preventDefault()
 	source = $("#stripe-template").html()
 	template = Handlebars.compile(source)
 	$('#bucket').html(template())

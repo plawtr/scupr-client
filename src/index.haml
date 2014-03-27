@@ -66,10 +66,13 @@
             %span.input-label
               Telephone
             %input{type: "text", name: "business-phone", value: "{{business.phone}}"}
-          %label.item.item-input
-            %span.input-label
+          %label.item.item-input-inset
+            %span.input-label{style: "-webkit-flex: 0 0 100px;"}
               Reach (m)
-            %input{type: "text", name: "business-radius", readonly: true, value: "{{business.radius}}"}
+            %item.item-input-wrapper
+              %input{type: "text", name: "business-radius", readonly: true, value: "{{business.radius}}"}
+            %button.button.button-small.button-outline.button-positive{id: "stripe", onclick: "getStripeForm();"}  
+              Double
           %label.item.item-input
             %span.input-label
               Latitude
@@ -91,13 +94,10 @@
             %input{type: "text", name: "ad-caption", value: "{{business.ad.caption}}", required: true}
           %input{type: "hidden", name: "business-id", value: "{{business.id}}"}  
           %div{style: "padding: 10px;"}  
-            %button.button.button-block.icon-right.ion-chevron-right.button-stable{id: "submit-new", onclick: "selectPhoto();"}
-              Select Image and Submit
+            %button.button.button-block.icon-right.ion-ios7-arrow-right.button-outline.button-positive{id: "submit-new", onclick: "selectPhoto();"}
+              Select Image and Submit              
       %div{style: "padding: 10px;"}  
-        %button.button.button-block.icon-right.ion-chevron-right.button-stable{id: "stripe", onclick: "getStripeForm();"}
-          Quadruple your reach               
-      %div{style: "padding: 10px;"}  
-        %button.button.button-block.icon-right.ion-chevron-right.button-assertive{id: "log-out", onclick: "killMeNow();"}
+        %button.button.button-block.icon-right.ion-ios7-arrow-right.button-outline.button-assertive{id: "log-out", onclick: "killMeNow();"}
           Log out 
 
     %script{id: 'stripe-template', type: 'text/x-handlebars-template'}

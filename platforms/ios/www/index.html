@@ -73,11 +73,16 @@
             </span>
             <input name='business-phone' type='text' value='{{business.phone}}'>
           </label>
-          <label class='item item-input'>
-            <span class='input-label'>
+          <label class='item item-input-inset'>
+            <span class='input-label' style='-webkit-flex: 0 0 100px;'>
               Reach (m)
             </span>
-            <input name='business-radius' readonly type='text' value='{{business.radius}}'>
+            <item class='item-input-wrapper'>
+              <input name='business-radius' readonly type='text' value='{{business.radius}}'>
+            </item>
+            <button class='button button-small button-outline button-positive' id='stripe' onclick='getStripeForm();'>
+              Double
+            </button>
           </label>
           <label class='item item-input'>
             <span class='input-label'>
@@ -108,19 +113,14 @@
           </label>
           <input name='business-id' type='hidden' value='{{business.id}}'>
           <div style='padding: 10px;'>
-            <button class='button button-block icon-right ion-chevron-right button-stable' id='submit-new' onclick='selectPhoto();'>
+            <button class='button button-block icon-right ion-ios7-arrow-right button-outline button-positive' id='submit-new' onclick='selectPhoto();'>
               Select Image and Submit
             </button>
           </div>
         </div>
       </form>
       <div style='padding: 10px;'>
-        <button class='button button-block icon-right ion-chevron-right button-stable' id='stripe' onclick='getStripeForm();'>
-          Quadruple your reach
-        </button>
-      </div>
-      <div style='padding: 10px;'>
-        <button class='button button-block icon-right ion-chevron-right button-assertive' id='log-out' onclick='killMeNow();'>
+        <button class='button button-block icon-right ion-ios7-arrow-right button-outline button-assertive' id='log-out' onclick='killMeNow();'>
           Log out
         </button>
       </div>

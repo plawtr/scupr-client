@@ -16,7 +16,7 @@ stripeResponseHandler = (status, response)->
     $form.append($('<input type="hidden" name="business-id" />').val(cookie.business.id))
     # $form.get(0).submit()
     data = $form.serializeArray()
-    $.post("http:localhost:3000/payment", data, onStripeSuccess)
+    $.post("http:scupr-staging.herokuapp.com/payment", data, onStripeSuccess)
 
 
 handleStripe = ()->
