@@ -127,7 +127,7 @@ onTransferFail = function(error) {
 };
 
 shareAdSocially = function() {
-  return window.plugins.socialsharing.share("Hey, check out " + ($('h2')[0].textContent) + " away from me right now: " + ($('p')[0].textContent) + ". #Уonder!", 'Уonder!', $('img')[0].src);
+  return window.plugins.socialsharing.share("Hey, check out " + ($('h2')[0].textContent) + " away from me right now: " + ($('p')[0].textContent) + " #Уonder!", 'Уonder!', $('img')[0].src);
 };
 
 getBusinessForm = function() {
