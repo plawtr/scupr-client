@@ -65,7 +65,7 @@ roundDistanceOfAd = (data)->
 selectPhoto = ()->
 	event.preventDefault()
 	photoOptions = {
-			quality         : 50,
+			quality         : 30,
 			destinationType : navigator.camera.DestinationType.FILE_URI,
 			sourceType      : navigator.camera.PictureSourceType.PHOTOLIBRARY
 	}

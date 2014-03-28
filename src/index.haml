@@ -87,7 +87,7 @@
           %label.item.item-input
             %span.input-label
               Caption
-            %textarea{type: "text", name: "ad-caption", value: "{{business.ad.caption}}", required: true}
+            %input{type: "text", name: "ad-caption", value: "{{business.ad.caption}}", required: true}
           %input{type: "hidden", name: "business-id", value: "{{business.id}}"}  
           %input{type: "hidden", name: "business-lat", readonly: false, value: "{{business.lat}}"}
           %input{type: "hidden", name: "business-lng", readonly: false, value: "{{business.lng}}"}
