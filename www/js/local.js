@@ -150,7 +150,7 @@ getBusinessForm = function() {
     $('#bucket').html(template(cookie));
     if (noEmptyFieldsOrButtons === true) {
       $("#stripe")[0].style.display = 'none';
-      $(".item-divider")[1].style.display = 'none';
+      $(".item-divider")[2].style.display = 'none';
       $(".item-thumbnail-left")[0].style.display = 'none';
       return $("#log-out")[0].style.display = 'none';
     }

@@ -124,7 +124,7 @@ getBusinessForm = ()->
 		$('#bucket').html(template(cookie))
 		if noEmptyFieldsOrButtons == true 						# If the cookie is empty hide:
 			$("#stripe")[0].style.display='none' 				# Stripe/increase radius button
-			$(".item-divider")[1].style.display='none' 	# existing ad caption and image
+			$(".item-divider")[2].style.display='none' 	# existing ad caption and image
 			$(".item-thumbnail-left")[0].style.display='none' 
 			$("#log-out")[0].style.display='none' 			# log out button
 	, onGPSError)

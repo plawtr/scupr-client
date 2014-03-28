@@ -74,14 +74,9 @@
               %input{type: "text", name: "business-radius", readonly: true, value: "{{business.radius}}"}
             %button.button.button-small.button-outline.button-positive{id: "stripe", onclick: "getStripeForm();"}  
               Double
-          %label.item.item-input
-            %span.input-label
-              Latitude
-            %input{type: "text", name: "business-lat", readonly: false, value: "{{business.lat}}"}
-          %label.item.item-input
-            %span.input-label
-              Longitude
-            %input{type: "text", name: "business-lng", readonly: false, value: "{{business.lng}}"}
+          .item.item-divider Current location 
+          .item 
+            %p Recorded and assigned to business  
           .item.item-divider Current ad details
           %label.item.item-thumbnail-left
             %img{src: "{{business.ad.bucket_image}}"}
@@ -92,8 +87,10 @@
           %label.item.item-input
             %span.input-label
               Caption
-            %input{type: "text", name: "ad-caption", value: "{{business.ad.caption}}", required: true}
+            %textarea{type: "text", name: "ad-caption", value: "{{business.ad.caption}}", required: true}
           %input{type: "hidden", name: "business-id", value: "{{business.id}}"}  
+          %input{type: "hidden", name: "business-lat", readonly: false, value: "{{business.lat}}"}
+          %input{type: "hidden", name: "business-lng", readonly: false, value: "{{business.lng}}"}
           %div{style: "padding: 10px;"}  
             %button.button.button-block.icon-right.ion-ios7-arrow-right.button-outline.button-positive{id: "submit-new", onclick: "selectPhoto();"}
               Select Image and Submit              
