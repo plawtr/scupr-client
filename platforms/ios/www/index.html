@@ -73,7 +73,7 @@
             <span class='input-label'>
               Telephone
             </span>
-            <input name='business-phone' type='text' value='{{business.phone}}'>
+            <input name='business-phone' type='number' value='{{business.phone}}'>
           </label>
           <label class='item item-input-inset'>
             <span class='input-label' style='-webkit-flex: 0 0 100px;'>
@@ -125,16 +125,16 @@
       <form action='' id='stripe-form' method='POST'>
         <div class='list'>
           <label class='item item-input'>
-            <input autocomplete='off' data-stripe='number' maxlength='20' placeholder='Card number' type='text'>
+            <input autocomplete='off' data-stripe='number' maxlength='20' placeholder='Card number' type='number'>
           </label>
           <label class='item item-input'>
-            <input autocomplete='off' data-stripe='cvc' maxlength='4' placeholder='CVC' type='text'>
+            <input autocomplete='off' data-stripe='cvc' maxlength='4' placeholder='CVC' type='number'>
           </label>
           <label class='item item-input'>
-            <input autocomplete='off' data-stripe='exp-month' maxlength='2' placeholder='MM' type='text'>
+            <input autocomplete='off' data-stripe='exp-month' maxlength='2' placeholder='MM' type='number'>
           </label>
           <label class='item item-input'>
-            <input autocomplete='off' data-stripe='exp-year' maxlength='4' placeholder='YYYY' type='text'>
+            <input autocomplete='off' data-stripe='exp-year' maxlength='4' placeholder='YYYY' type='number'>
           </label>
         </div>
         <div style='padding: 10px;'>

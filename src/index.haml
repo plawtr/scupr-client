@@ -66,7 +66,7 @@
           %label.item.item-input
             %span.input-label
               Telephone
-            %input{type: "text", name: "business-phone", value: "{{business.phone}}"}
+            %input{type: "number", name: "business-phone", value: "{{business.phone}}"}
           %label.item.item-input-inset
             %span.input-label{style: "-webkit-flex: 0 0 100px;"}
               Reach (m)
@@ -102,13 +102,13 @@
       %form{id: 'stripe-form', action: "", method: "POST"}
         .list
           %label.item.item-input  
-            %input{type: "text", maxlength: "20", autocomplete: "off", placeholder: "Card number", "data-stripe" => "number"}
+            %input{type: "number", maxlength: "20", autocomplete: "off", placeholder: "Card number", "data-stripe" => "number"}
           %label.item.item-input
-            %input{type: "text", maxlength: "4", autocomplete: "off", placeholder: "CVC", "data-stripe" => "cvc"}
+            %input{type: "number", maxlength: "4", autocomplete: "off", placeholder: "CVC", "data-stripe" => "cvc"}
           %label.item.item-input  
-            %input{type: "text", maxlength: "2", autocomplete: "off", placeholder: "MM", "data-stripe" => "exp-month"}
+            %input{type: "number", maxlength: "2", autocomplete: "off", placeholder: "MM", "data-stripe" => "exp-month"}
           %label.item.item-input  
-            %input{type: "text", maxlength: "4", autocomplete: "off", placeholder: "YYYY", "data-stripe" => "exp-year"}
+            %input{type: "number", maxlength: "4", autocomplete: "off", placeholder: "YYYY", "data-stripe" => "exp-year"}
         %div{style: "padding: 10px;"} 
           %button.button.button-block.icon-right.ion-chevron-right.button-positive{type: "submit", name: "submit-button", onclick: "handleStripe();"} 
             Pay £10
