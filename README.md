@@ -1,7 +1,7 @@
 yonder-client
 =============
 
-Phone client for Уonder*!*
+Phone client for Уonder*! *
 
 Demo of the app:
 
