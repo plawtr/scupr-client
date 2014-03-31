@@ -32,8 +32,8 @@ Handlebars.registerHelper('createBucket', (ad)->
 	<a class='item item-thumbnail-left' data-id="#{ad.id}" href="#" onclick="getAdWithGPS();">
  <img src= "#{ad.bucket_image}"/>
  <h2>#{ad.business_name} &middot #{ad.distance}m</h2>
- <p>#{ad.caption}</p>
- <span class="item-note" ><small><small>#{ad.updated_ago} ago</small></small></span>
+ <p style="margin: 0 0 0px">#{ad.caption}</p>
+ <p>#{ad.updated_ago}</p>
  </a>
  """)
 )
