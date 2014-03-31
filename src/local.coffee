@@ -7,7 +7,7 @@ onLoad = ()->
 	document.addEventListener("deviceready", onDeviceReady, false)
 
 getBucket = (position)->
-	$.get("http:localhost:3000/ads", position, (data)->
+	$.get("http:scupr-staging.herokuapp.com/ads", position, (data)->
  	fillBucket(data)
  	)
 
@@ -33,7 +33,7 @@ Handlebars.registerHelper('createBucket', (ad)->
  <img src= "#{ad.bucket_image}"/>
  <h2>#{ad.business_name} &middot #{ad.distance}m</h2>
  <p>#{ad.caption}</p>
- <span class="item-note"><small><small>#{ad.updated_ago} ago</small></small></span>
+ <span class="item-note" ><small><small>#{ad.updated_ago} ago</small></small></span>
  </a>
  """)
 )
