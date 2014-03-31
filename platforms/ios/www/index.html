@@ -105,15 +105,20 @@
             </span>
             <input name='ad-caption' required type='text' value='{{business.ad.caption}}'>
           </label>
-          <input name='business-id' type='hidden' value='{{business.id}}'>
-          <input name='business-lat' type='hidden' value='{{business.lat}}'>
-          <input name='business-lng' type='hidden' value='{{business.lng}}'>
-          <div style='padding: 10px;'>
-            <button class='button button-block icon-right ion-ios7-arrow-right button-outline button-positive' id='submit-new' onclick='selectPhoto();'>
-              Select Image and Submit
-            </button>
-          </div>
+          <label class='item item-input'>
+            <span class='input-label'>
+              Tags
+            </span>
+          </label>
         </div>
+        <textarea id='ad_tags' name='ad-tags' required type='text' value='{{business.ad.tags}}'><input name='business-id' type='hidden' value='{{business.id}}'>
+        <input name='business-lat' type='hidden' value='{{business.lat}}'>
+        <input name='business-lng' type='hidden' value='{{business.lng}}'>
+        <div style='padding: 10px;'>
+          <button class='button button-block icon-right ion-ios7-arrow-right button-outline button-positive' id='submit-new' onclick='selectPhoto();'>
+            Select Image and Submit
+          </button>
+        </div></textarea>
       </form>
       <div style='padding: 10px;'>
         <button class='button button-block icon-right ion-ios7-arrow-right button-outline button-assertive' id='log-out' onclick='killMeNow();'>
@@ -152,6 +157,8 @@
     <script src='js/maps_local.js' type='text/javascript'></script>
     <script src='https://js.stripe.com/v1/' type='text/javascript'></script>
     <script src='js/stripe_local.js' type='text/javascript'></script>
+    <script src='js/inputosaurus.js' type='text/javascript'></script>
+    <script src='js/inputowhaa.js' type='text/javascript'></script>
     <script>
       document.addEventListener("deviceready", startApp, false);
     </script>

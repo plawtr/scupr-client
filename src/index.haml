@@ -88,6 +88,10 @@
             %span.input-label
               Caption
             %input{type: "text", name: "ad-caption", value: "{{business.ad.caption}}", required: true}
+          %label.item.item-input
+            %span.input-label
+              Tags
+            %textarea{type: "text", id: "ad_tags", name: "ad-tags", value: "{{business.ad.tags}}", required: true}
           %input{type: "hidden", name: "business-id", value: "{{business.id}}"}  
           %input{type: "hidden", name: "business-lat", readonly: false, value: "{{business.lat}}"}
           %input{type: "hidden", name: "business-lng", readonly: false, value: "{{business.lng}}"}
@@ -120,6 +124,8 @@
     %script{type: "text/javascript", src: "js/maps_local.js"}
     %script{type: "text/javascript", src: "https://js.stripe.com/v1/"}
     %script{type: "text/javascript", src: "js/stripe_local.js"}
+    %script{type: "text/javascript", src: "js/inputosaurus.js"}
+    %script{type: "text/javascript", src: "js/inputowhaa.js"}
     %script
       document.addEventListener("deviceready", startApp, false);
     
