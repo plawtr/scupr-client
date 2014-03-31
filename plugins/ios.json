@@ -12,7 +12,8 @@
                 "<feature name=\"FileTransfer\"><param name=\"ios-package\" value=\"CDVFileTransfer\" /></feature>": 1,
                 "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /></feature>": 1,
                 "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>": 1,
-                "<feature name=\"Passbook\"><param name=\"ios-package\" value=\"CDVPassbook\" /></feature>": 1
+                "<feature name=\"Passbook\"><param name=\"ios-package\" value=\"CDVPassbook\" /></feature>": 1,
+                "<feature name=\"SpinnerPlugin\"><param name=\"ios-package\" value=\"SpinnerPlugin\" /></feature>": 1
             }
         },
         "framework": {
@@ -65,6 +66,9 @@
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "com.passslot.cordova.plugin.passbook": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "it.mobimentum.phonegapspinnerplugin": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },

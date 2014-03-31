@@ -77,6 +77,7 @@ onPictureFail = (message)->
 	console.log('Failed because: ' + message)
 
 uploadPhoto = (imageURI)-> 
+	spinnerplugin.show({'overlay':true})
 	options = new FileUploadOptions()
 	options.fileKey="file"
 	options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1)
@@ -91,6 +92,7 @@ uploadPhoto = (imageURI)->
 	ft.upload(imageURI, encodeURI("http:scupr-staging.herokuapp.com/business/new"), onTransferSuccess, onTransferFail, options)
 
 onTransferSuccess = (r)->
+	spinnerplugin.hide()
 	console.log("Code = " + r.responseCode)
 	console.log("Response = " + r.response)
 	console.log("Sent = " + r.bytesSent)

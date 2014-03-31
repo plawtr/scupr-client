@@ -54,6 +54,7 @@
 		460BA21FCD1442F98D26FF13 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5E1863B2DC4CE391F82E76 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4AA2CAD2C8454271B0592E91 /* CDVPassbook.m in Sources */ = {isa = PBXBuildFile; fileRef = E445C7F0B03C45B3831FF742 /* CDVPassbook.m */; };
 		D57F836DEB8847BE93B5A921 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801858E8E23F46C9A0EBA87D /* PassKit.framework */; };
+		D0E68064D7D24CA9AE528BCE /* SpinnerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C5AC8D82F4D66BB577276 /* SpinnerPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,8 @@
 		E445C7F0B03C45B3831FF742 /* CDVPassbook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVPassbook.m"; path = "com.passslot.cordova.plugin.passbook/CDVPassbook.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		63AEA16CDE3E4560B5A3EDE7 /* CDVPassbook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVPassbook.h"; path = "com.passslot.cordova.plugin.passbook/CDVPassbook.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		801858E8E23F46C9A0EBA87D /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "PassKit.framework"; path = "System/Library/Frameworks/PassKit.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		099C5AC8D82F4D66BB577276 /* SpinnerPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SpinnerPlugin.m"; path = "it.mobimentum.phonegapspinnerplugin/SpinnerPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A58914477D7A48EC8214C1FE /* SpinnerPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SpinnerPlugin.h"; path = "it.mobimentum.phonegapspinnerplugin/SpinnerPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +300,8 @@
 				AC37A45FF014430EAA0E2D85 /* CDVNotification.h */,
 				E445C7F0B03C45B3831FF742 /* CDVPassbook.m */,
 				63AEA16CDE3E4560B5A3EDE7 /* CDVPassbook.h */,
+				099C5AC8D82F4D66BB577276 /* SpinnerPlugin.m */,
+				A58914477D7A48EC8214C1FE /* SpinnerPlugin.h */,
 			);
 			name = Plugins;
 			path = "Yonder/Plugins";
@@ -502,6 +507,7 @@
 				A691112DA5D6425F98A6F976 /* SocialSharing.m in Sources */,
 				77ABFD6AA54A4DFFBC6F5B53 /* CDVNotification.m in Sources */,
 				4AA2CAD2C8454271B0592E91 /* CDVPassbook.m in Sources */,
+				D0E68064D7D24CA9AE528BCE /* SpinnerPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

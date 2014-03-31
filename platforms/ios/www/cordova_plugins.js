@@ -226,6 +226,13 @@ module.exports = [
         "clobbers": [
             "Passbook"
         ]
+    },
+    {
+        "file": "plugins/it.mobimentum.phonegapspinnerplugin/www/spinnerplugin.js",
+        "id": "it.mobimentum.phonegapspinnerplugin.SpinnerPlugin",
+        "clobbers": [
+            "window.spinnerplugin"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -237,7 +244,8 @@ module.exports.metadata =
     "org.apache.cordova.file-transfer": "0.4.2",
     "nl.x-services.plugins.socialsharing": "4.0.7",
     "org.apache.cordova.dialogs": "0.2.6",
-    "com.passslot.cordova.plugin.passbook": "0.1.0"
+    "com.passslot.cordova.plugin.passbook": "0.1.0",
+    "it.mobimentum.phonegapspinnerplugin": "1.0.3"
 }
 // BOTTOM OF METADATA
 });

@@ -97,6 +97,9 @@ onPictureFail = function(message) {
 
 uploadPhoto = function(imageURI) {
   var ft, input, options, params, _i, _len, _ref;
+  spinnerplugin.show({
+    'overlay': true
+  });
   options = new FileUploadOptions();
   options.fileKey = "file";
   options.fileName = imageURI.substr(imageURI.lastIndexOf('/') + 1);
@@ -113,6 +116,7 @@ uploadPhoto = function(imageURI) {
 };
 
 onTransferSuccess = function(r) {
+  spinnerplugin.hide();
   console.log("Code = " + r.responseCode);
   console.log("Response = " + r.response);
   console.log("Sent = " + r.bytesSent);
