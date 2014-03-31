@@ -40,7 +40,7 @@ fillAd = function(data) {
 };
 
 Handlebars.registerHelper('createBucket', function(ad) {
-  return new Handlebars.SafeString("<a class='item item-thumbnail-left' data-id=\"" + ad.id + "\" href=\"#\" onclick=\"getAdWithGPS();\">\n <img src= \"" + ad.bucket_image + "\"/>\n <h2>" + ad.business_name + " &middot " + ad.distance + "m</h2>\n <p>" + ad.caption + "</p>\n </a>");
+  return new Handlebars.SafeString("<a class='item item-thumbnail-left' data-id=\"" + ad.id + "\" href=\"#\" onclick=\"getAdWithGPS();\">\n <img src= \"" + ad.bucket_image + "\"/>\n <h2>" + ad.business_name + " &middot " + ad.distance + "m</h2>\n <p>" + ad.caption + "</p>\n <span class=\"item-note\" ><small><small>" + ad.updated_ago + " ago</small></small></span>\n </a>");
 });
 
 getBucketWithGPS = function() {
