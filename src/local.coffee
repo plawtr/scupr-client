@@ -97,7 +97,7 @@ onTransferSuccess = (r)->
 	console.log("Response = " + r.response)
 	console.log("Sent = " + r.bytesSent)
 	window.localStorage.setItem("business", r.response)
-	navigator.notification.alert("Successfully uploaded", getBucketWithGPS(), "Business and Ad Details")
+	navigator.notification.alert("Successfully uploaded", getBucketWithGPS(), "Business and ad details")
 
 onTransferFail = (error)->
 	navigator.notification.alert("Code = " + error.code, $.noop, "An error has occurred")
@@ -135,7 +135,7 @@ getBusinessForm = ()->
 			change : (ev)->
 				$('#widget1_reflect').val(ev.target.value)
 		})
-		
+
 		if noEmptyFieldsOrButtons == true 						# If the cookie is empty hide:
 			$("#stripe")[0].style.display='none' 				# Stripe/increase radius button
 			$(".item-divider")[2].style.display='none' 	# existing ad caption and image

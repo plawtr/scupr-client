@@ -121,7 +121,7 @@ onTransferSuccess = function(r) {
   console.log("Response = " + r.response);
   console.log("Sent = " + r.bytesSent);
   window.localStorage.setItem("business", r.response);
-  return navigator.notification.alert("Successfully uploaded", getBucketWithGPS(), "Business and Ad Details");
+  return navigator.notification.alert("Successfully uploaded", getBucketWithGPS(), "Business and ad details");
 };
 
 onTransferFail = function(error) {

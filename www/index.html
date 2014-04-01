@@ -59,6 +59,7 @@
         </a>
       </div>
       <span id='placeholder'></span>
+      <button class='button button-block button-clear button-stable button-small' href='#' onclick=''>Are you the business owner?</button>
     </script>
     <script id='form-template' type='text/x-handlebars-template'>
       <form id='new-business'>
@@ -93,6 +94,12 @@
           <div class='item'>
             <p>Recorded and assigned to business</p>
           </div>
+          <a class='item item-icon-left positive item-icon-right' data-lat='{{business.lat}}' data-lng='{{business.lng}}' href='#' onclick='getBusinessMapWithGPS();'>
+            <i class='icon ion-ios7-navigate-outline'></i>
+            Correct location
+            <i class='icon ion-ios7-arrow-down'></i>
+          </a>
+          <span id='placeholder'></span>
           <div class='item item-divider'>Current ad details</div>
           <label class='item item-thumbnail-left'>
             <img src='{{business.ad.bucket_image}}'>
@@ -117,14 +124,14 @@
           <input name='business-id' type='hidden' value='{{business.id}}'>
           <input name='business-lat' type='hidden' value='{{business.lat}}'>
           <input name='business-lng' type='hidden' value='{{business.lng}}'>
-          <div style='padding: 10px;'>
+          <div class='padding'>
             <button class='button button-block icon-right ion-ios7-arrow-right button-outline button-positive' id='submit-new' onclick='selectPhoto();'>
               Select Image and Submit
             </button>
           </div>
         </div>
       </form>
-      <div style='padding: 10px;'>
+      <div class='padding'>
         <button class='button button-block icon-right ion-ios7-arrow-right button-outline button-assertive' id='log-out' onclick='killMeNow();'>
           Log out
         </button>
@@ -146,7 +153,7 @@
             <input autocomplete='off' data-stripe='exp-year' maxlength='4' placeholder='YYYY' type='number'>
           </label>
         </div>
-        <div style='padding: 10px;'>
+        <div class='padding'>
           <button class='button button-block icon-right ion-chevron-right button-positive' name='submit-button' onclick='handleStripe();' type='submit'>
             Pay £10
           </button>

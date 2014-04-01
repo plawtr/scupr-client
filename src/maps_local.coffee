@@ -326,7 +326,7 @@ onGPSSuccess = (position) ->
 getMapWithGPS = ()->
   mapCanvas = $("""
     <div class="list card">
-        <div class="item item-image" id="map" style="width: 100%; height: 400px">
+        <div class="item item-image" id="map" style="width: 100%; height: 300px">
         </div>
     </div>
     """)
@@ -335,5 +335,35 @@ getMapWithGPS = ()->
   window.businessLat = $(this.event.target).data('lat')
   navigator.geolocation.getCurrentPosition(onGPSSuccess, onGPSError)
 
+
+getBusinessMapWithGPS = ()->
+  mapCanvas = $("""
+    <div class="list card">
+        <div class="item item-image" id="map" style="width: 100%; height: 300px">
+        </div>
+    </div>
+    """)
+  $('#placeholder').html(mapCanvas)
+  window.businessLng = $(this.event.target).data('lng')
+  window.businessLat = $(this.event.target).data('lat')
+  navigator.geolocation.getCurrentPosition(onBusinessGPSSuccess, onGPSError)
+
+ onBusinessGPSSuccess = (position) ->
+  businessLocation = new google.maps.LatLng(window.businessLat, window.businessLng)
+
+  myOptions = {
+    zoom: 16,
+    center: businessLocation,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: mapStyle,
+    disableDefaultUI: true
+  }
+
+  map = new google.maps.Map(document.getElementById("map"), myOptions)
+
+  marker = new google.maps.Marker
+    position: businessLocation,
+    draggable: true,
+    map: map
 
 
