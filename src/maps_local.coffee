@@ -366,4 +366,6 @@ getBusinessMapWithGPS = ()->
     draggable: true,
     map: map
 
+    # lat = marker.getPosition().lat()
+    # lng = homeMarker.getPosition().lng()
 
