@@ -1,14 +1,14 @@
 Phone app for Уonder!
 ================
 
-This iphone app was my final project at Makers Academy. 
+This iphone app was my final project at [Makers Academy]. 
 Together with Andrey Krahmal ([@plawtr]) we built Yonnder! in 10 very intentse days full of coding.
 
 ##Technologies:
 - The app is built using Phonegap framework together with Ionic for styling.
 - It is written in Haml and Coffeescript (and compiled into HTML and Javascript).
 - Handlebars are used to produce the different templates.
-- It comunicates with the server ([scuper]) through JQuery requests getting and posting JSON data.
+- It comunicates with the server ([scupr]) through JQuery requests getting and posting JSON data.
 - Provides directions by accessing Google maps API.
 
 ##Plugins:
@@ -27,3 +27,4 @@ alt="Уonder! Demo" width="640" height="480" border="10" /></a>
 
 [@plawtr]: https://github.com/plawtr
 [scupr]: https://github.com/Berta-G/scupr
+[Makers Academy]: http://www.makersacademy.com/
