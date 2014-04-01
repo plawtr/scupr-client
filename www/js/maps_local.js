@@ -285,9 +285,13 @@ onBusinessGPSSuccess = function(position) {
     disableDefaultUI: true
   };
   map = new google.maps.Map(document.getElementById("map"), myOptions);
-  return marker = new google.maps.Marker({
+  marker = new google.maps.Marker({
     position: businessLocation,
     draggable: true,
     map: map
+  });
+  return google.maps.event.addListener(marker, 'dragend', function(evt) {
+    document.getElementById('business-lat').value = evt.latLng.lat();
+    return document.getElementById('business-lng').value = evt.latLng.lng();
   });
 };

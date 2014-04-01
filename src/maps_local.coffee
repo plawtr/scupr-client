@@ -348,7 +348,7 @@ getBusinessMapWithGPS = ()->
   window.businessLat = $(this.event.target).data('lat')
   navigator.geolocation.getCurrentPosition(onBusinessGPSSuccess, onGPSError)
 
- onBusinessGPSSuccess = (position) ->
+ onBusinessGPSSuccess = (position)->
   businessLocation = new google.maps.LatLng(window.businessLat, window.businessLng)
 
   myOptions = {
@@ -366,6 +366,12 @@ getBusinessMapWithGPS = ()->
     draggable: true,
     map: map
 
+  google.maps.event.addListener(marker, 'dragend', (evt)->
+    document.getElementById('business-lat').value = evt.latLng.lat()
+    document.getElementById('business-lng').value = evt.latLng.lng()
+  )
+
+
     # lat = marker.getPosition().lat()
-    # lng = homeMarker.getPosition().lng()
+    # lng = marker.getPosition().lng()
 
