@@ -5,6 +5,7 @@
     %meta{name: "format-detection", content: "telephone=no"}
     %meta{name: "viewport", content: "user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"}
     %link{rel: "stylesheet", type: "text/css", href: "css/ionic.css"}
+    %link{rel: "stylesheet", type: "text/css", href: "css/inputosaurus.css"}
     %title Уonder!
 
 
@@ -20,8 +21,10 @@
   
     %script{type: "text/javascript", src: "cordova.js"}
     %script{type: "text/javascript", src: "js/jquery.js"}
+    %script{type: "text/javascript", src: "js/jquery-ui.js"}
     %script{type: "text/javascript", src: "js/handlebars.js"}
     %script{type: "text/javascript", src: "js/ionic.bundle.js"}
+    %script{type: "text/javascript", src: "js/inputosaurus.js"}
 
     %script{id: 'bucket-template', type: 'text/x-handlebars-template'}     
       .list
@@ -91,7 +94,7 @@
           %label.item.item-input
             %span.input-label
               Tags
-            %textarea{type: "text", id: "ad_tags", name: "ad-tags", value: "{{business.ad.tags}}", required: true}
+            %input{type: "text", id: "ad_tags", name: "ad-tags", value: "{{business.ad.tags}}"}
           %input{type: "hidden", name: "business-id", value: "{{business.id}}"}  
           %input{type: "hidden", name: "business-lat", readonly: false, value: "{{business.lat}}"}
           %input{type: "hidden", name: "business-lng", readonly: false, value: "{{business.lng}}"}
@@ -101,6 +104,7 @@
       %div{style: "padding: 10px;"}  
         %button.button.button-block.icon-right.ion-ios7-arrow-right.button-outline.button-assertive{id: "log-out", onclick: "killMeNow();"}
           Log out 
+
 
     %script{id: 'stripe-template', type: 'text/x-handlebars-template'}
       %form{id: 'stripe-form', action: "", method: "POST"}
@@ -124,8 +128,6 @@
     %script{type: "text/javascript", src: "js/maps_local.js"}
     %script{type: "text/javascript", src: "https://js.stripe.com/v1/"}
     %script{type: "text/javascript", src: "js/stripe_local.js"}
-    %script{type: "text/javascript", src: "js/inputosaurus.js"}
-    %script{type: "text/javascript", src: "js/inputowhaa.js"}
     %script
       document.addEventListener("deviceready", startApp, false);
     

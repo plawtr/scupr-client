@@ -1,0 +1,67 @@
+.inputosaurus-container {
+	background-color: none;
+	border: none;
+/*	margin:0 5px 5px 0;
+	padding:0 3px;*/
+	display : inline-block;
+	cursor:text;
+	font-size : 14px;
+	font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.inputosaurus-container li {
+	display : block;
+	float : left;
+	overflow: hidden;
+	margin : 2px 2px 0;
+	padding : 2px 3px;
+	white-space : nowrap;
+	overflow : hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	-ms-text-overflow:ellipsis;
+	background-color:none;
+	border:#4a87ee solid 1px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	color:#4a87ee;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	line-height : 20px;
+	cursor: default;
+}
+.inputosaurus-container li.inputosaurus-selected { background-color:#bdd6eb; }
+.inputosaurus-container li a {
+	font-size:16px;
+	color:#4a87ee;
+	padding : 1px;
+	text-decoration : none;
+	outline : none;
+}
+.inputosaurus-container .inputosaurus-input {
+	border:none;
+	box-shadow: none;
+	background-color:#fff;
+	margin-top : 3px;
+}
+.inputosaurus-container .inputosaurus-input input {
+	border:none;
+	height : 23px;
+	font-size : 14px;
+	line-height : 20px;
+	color : #555;
+	margin : 0;
+	outline : none;
+	padding : 0 0 1px 1px;
+	width : 25px;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+}
+.inputosaurus-container .inputosaurus-input input:hover {
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+}
+.inputosaurus-input-hidden { display:none; }

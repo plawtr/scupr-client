@@ -414,7 +414,7 @@
 			className = className ? ' class="' + className + '"' : '';
 
 			if(name !== undefined){
-				return $('<li' + className + ' data-inputosaurus="' + key + '"><span>' + name + '</span> <a href="javascript:void(0);" class="ficon">&#x2716;</a></li>');
+				return $('<li' + className + ' data-inputosaurus="' + key + '"><span>' + name + '</span> <a href="javascript:void(0);" class="ficon">&#x2715;</a></li>');
 			}
 		},
 

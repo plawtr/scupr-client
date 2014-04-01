@@ -152,6 +152,15 @@ getBusinessForm = function() {
     source = $("#form-template").html();
     template = Handlebars.compile(source);
     $('#bucket').html(template(cookie));
+    $('#ad_tags').inputosaurus({
+      width: '200px',
+      allowDuplicates: false,
+      inputDelimiters: [',', ';', ' '],
+      outputDelimiter: [' '],
+      change: function(ev) {
+        return $('#widget1_reflect').val(ev.target.value);
+      }
+    });
     if (noEmptyFieldsOrButtons === true) {
       $("#stripe")[0].style.display = 'none';
       $(".item-divider")[2].style.display = 'none';

@@ -125,6 +125,17 @@ getBusinessForm = ()->
 		source = $("#form-template").html()
 		template = Handlebars.compile(source)
 		$('#bucket').html(template(cookie))
+
+		$('#ad_tags').inputosaurus({
+			width: '200px',
+			allowDuplicates: false,
+			inputDelimiters: [',', ';', ' '],
+			outputDelimiter: [' '],
+			# autoCompleteSource : ['alabama', 'illinois', 'kansas', 'kentucky', 'new york'],
+			change : (ev)->
+				$('#widget1_reflect').val(ev.target.value)
+		})
+		
 		if noEmptyFieldsOrButtons == true 						# If the cookie is empty hide:
 			$("#stripe")[0].style.display='none' 				# Stripe/increase radius button
 			$(".item-divider")[2].style.display='none' 	# existing ad caption and image
