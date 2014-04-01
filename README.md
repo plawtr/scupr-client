@@ -1,4 +1,4 @@
-Phone client for Уonder!
+Phone app for Уonder!
 =============
 
 
