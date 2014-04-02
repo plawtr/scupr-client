@@ -29,14 +29,27 @@ fillAd = (data)->
 
 Handlebars.registerHelper('createBucket', (ad)->
 	new Handlebars.SafeString("""
-	<a class='item item-thumbnail-left' data-id="#{ad.id}" href="#" onclick="getAdWithGPS();">
+	<a class='item item-thumbnail-left item-text-wrap' data-id="#{ad.id}" href="#" onclick="getAdWithGPS();">
  <img src= "#{ad.bucket_image}"/>
  <h2>#{ad.business_name} &middot #{ad.distance}m</h2>
  <p style="margin: 0 0 0px">#{ad.caption}</p>
- <p>#{ad.updated_ago}</p>
- </a>
+ <p>#{ad.updated_ago} &middot
  """)
 )
+
+Handlebars.registerHelper('createTag', (tag)->
+	new Handlebars.SafeString("""
+	<button style="line-height: 18px; min-height: 0px; margin-bottom: 3px;" class="button button-outline button-small button-positive">#{tag}</button>
+ """)
+)
+
+Handlebars.registerHelper('closeItem', ->
+	new Handlebars.SafeString("""
+	</p>
+ 	</a>
+ """)
+)
+
 
 getBucketWithGPS = ()->
 	navigator.geolocation.getCurrentPosition(onGPSBucketSuccess, onGPSError)

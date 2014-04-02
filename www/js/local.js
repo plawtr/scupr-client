@@ -40,7 +40,15 @@ fillAd = function(data) {
 };
 
 Handlebars.registerHelper('createBucket', function(ad) {
-  return new Handlebars.SafeString("<a class='item item-thumbnail-left' data-id=\"" + ad.id + "\" href=\"#\" onclick=\"getAdWithGPS();\">\n <img src= \"" + ad.bucket_image + "\"/>\n <h2>" + ad.business_name + " &middot " + ad.distance + "m</h2>\n <p style=\"margin: 0 0 0px\">" + ad.caption + "</p>\n <p>" + ad.updated_ago + "</p>\n </a>");
+  return new Handlebars.SafeString("<a class='item item-thumbnail-left item-text-wrap' data-id=\"" + ad.id + "\" href=\"#\" onclick=\"getAdWithGPS();\">\n <img src= \"" + ad.bucket_image + "\"/>\n <h2>" + ad.business_name + " &middot " + ad.distance + "m</h2>\n <p style=\"margin: 0 0 0px\">" + ad.caption + "</p>\n <p>" + ad.updated_ago + " &middot");
+});
+
+Handlebars.registerHelper('createTag', function(tag) {
+  return new Handlebars.SafeString("<button style=\"line-height: 18px; min-height: 0px; margin-bottom: 3px;\" class=\"button button-outline button-small button-positive\">" + tag + "</button>");
+});
+
+Handlebars.registerHelper('closeItem', function() {
+  return new Handlebars.SafeString("</p>\n 	</a>");
 });
 
 getBucketWithGPS = function() {

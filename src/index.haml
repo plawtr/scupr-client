@@ -30,6 +30,10 @@
       .list
         {{#each ads}}
         {{createBucket this}}
+        {{#each this.tags}}
+        {{createTag this}}
+        {{/each}}
+        {{closeItem}}
         {{/each}}
 
     %script{id: 'ad-template', type: 'text/x-handlebars-template'}     
