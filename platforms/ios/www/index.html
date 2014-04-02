@@ -39,6 +39,11 @@
         <div class='item item-text-wrap'>
           <p>{{ad.caption}}</p>
         </div>
+        <div class='item item-text-wrap'>
+          {{#each ad.tags}}
+          <button class='button button-outline button-small button-positive' data-tag='{{this}}' onclick='getTagBucketWithGPS();' style='line-height: 18px; min-height: 0px; margin-bottom: 3px;'>{{this}}</button>
+          {{/each}}
+        </div>
         <div class='item item-image'>
           <img class='full-mage' src='{{ad.image}}'>
         </div>

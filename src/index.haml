@@ -42,6 +42,12 @@
           %h2 {{ad.business_name}} &middot {{ad.distance}}m
         .item.item-text-wrap
           %p {{ad.caption}}
+        .item.item-text-wrap
+          {{#each ad.tags}}
+          %button.button.button-outline.button-small.button-positive{onclick: "getTagBucketWithGPS();", "data-tag" => "{{this}}", style: "line-height: 18px; min-height: 0px; margin-bottom: 3px;"} {{this}}
+          {{/each}}
+          -# %button.button.button-outline.button-small.button-positive{onclick: "getTagBucketWithGPS();", "data-tag" => "testingtag", style: "line-height: 18px; min-height: 0px; margin-bottom: 3px;"} testing tag
+          -# <button onclick="getTagBucketWithGPS("#{tag}");" data-tag="#{tag}" style="line-height: 18px; min-height: 0px; margin-bottom: 3px;" class="button button-outline button-small button-positive">#{tag}</button>  
         .item.item-image
           %img.full-mage{src: "{{ad.image}}"}
         .item.tabs.tabs-secondary.tabs-icon-left

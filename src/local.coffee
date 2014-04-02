@@ -39,11 +39,11 @@ Handlebars.registerHelper('createBucket', (ad)->
 
 Handlebars.registerHelper('createTag', (tag)->
 	new Handlebars.SafeString("""
-	<button style="line-height: 18px; min-height: 0px; margin-bottom: 3px;" class="button button-outline button-small button-positive">#{tag}</button>
+	<button onclick="getTagBucketWithGPS("#{tag}");" data-tag="#{tag}" style="line-height: 18px; min-height: 0px; margin-bottom: 3px;" class="button button-outline button-small button-positive">#{tag}</button>
  """)
 )
 
-Handlebars.registerHelper('closeItem', ->
+Handlebars.registerHelper('closeItem', ()->
 	new Handlebars.SafeString("""
 	</p>
  	</a>
@@ -169,3 +169,16 @@ getStripeForm = ()->
 	template = Handlebars.compile(source)
 	$('#bucket').html(template())
 
+
+getTagBucketWithGPS = (tag)->
+	event.preventDefault()
+	window.currentTag = $(this.event.target).data('tag')
+	navigator.geolocation.getCurrentPosition(onGPSTagSuccess, onGPSError)
+
+onGPSTagSuccess = (position) ->
+	getTag(position)
+
+getTag = (position)->
+	$.get("http:localhost:3000/tags/#{window.currentTag}", position, (data)->
+ 	fillBucket(data)
+ 	)
