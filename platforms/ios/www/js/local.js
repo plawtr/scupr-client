@@ -12,13 +12,13 @@ onLoad = function() {
 };
 
 getBucket = function(position) {
-  return $.get("http:scupr-staging.herokuapp.com/ads", position, function(data) {
+  return $.get("http:localhost:3000/ads", position, function(data) {
     return fillBucket(data);
   });
 };
 
 getAd = function(position) {
-  return $.get("http:scupr-staging.herokuapp.com/ads/" + window.currentAdId, position, function(data) {
+  return $.get("http:localhost:3000/ads/" + window.currentAdId, position, function(data) {
     return fillAd(data);
   });
 };
@@ -112,7 +112,7 @@ uploadPhoto = function(imageURI) {
   }
   options.params = params;
   ft = new FileTransfer();
-  return ft.upload(imageURI, encodeURI("http:scupr-staging.herokuapp.com/business/new"), onTransferSuccess, onTransferFail, options);
+  return ft.upload(imageURI, encodeURI("http:localhost:3000/business/new"), onTransferSuccess, onTransferFail, options);
 };
 
 onTransferSuccess = function(r) {
