@@ -7,12 +7,12 @@ onLoad = ()->
 	document.addEventListener("deviceready", onDeviceReady, false)
 
 getBucket = (position)->
-	$.get("http:localhost:3000/ads", position, (data)->
+	$.get("http:scupr-staging.herokuapp.com/ads", position, (data)->
  	fillBucket(data)
  	)
 
 getAd = (position) ->
-	$.get("http:localhost:3000/ads/#{window.currentAdId}", position, (data) ->
+	$.get("http:scupr-staging.herokuapp.com/ads/#{window.currentAdId}", position, (data) ->
  	fillAd(data))
 
 fillBucket = (data)->
@@ -102,7 +102,7 @@ uploadPhoto = (imageURI)->
 	options.params = params
 
 	ft = new FileTransfer()
-	ft.upload(imageURI, encodeURI("http:localhost:3000/business/new"), onTransferSuccess, onTransferFail, options)
+	ft.upload(imageURI, encodeURI("http:scupr-staging.herokuapp.com/business/new"), onTransferSuccess, onTransferFail, options)
 
 onTransferSuccess = (r)->
 	spinnerplugin.hide()
@@ -179,12 +179,12 @@ onGPSTagSuccess = (position) ->
 	getTag(position)
 
 getTag = (position)->
-	$.get("http:localhost:3000/tags/#{window.currentTag}", position, (data)->
+	$.get("http:scupr-staging.herokuapp.com/tags/#{window.currentTag}", position, (data)->
  	fillBucket(data)
  	)
 
 getBusiness = (id)->
-	$.get("http:localhost:3000/business/#{id}", (data)->
+	$.get("http:scupr-staging.herokuapp.com/business/#{id}", (data)->
  	window.localStorage.setItem("business", JSON.stringify(data))
  	getBusinessForm()
  	)
