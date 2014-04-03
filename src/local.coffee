@@ -29,7 +29,7 @@ fillAd = (data)->
 
 Handlebars.registerHelper('createBucket', (ad)->
 	new Handlebars.SafeString("""
-	<a class='item item-thumbnail-left item-text-wrap' data-id="#{ad.id}" href="#" onclick="getAdWithGPS();">
+<a class='item item-thumbnail-left item-text-wrap' data-id="#{ad.id}" href="#" onclick="getAdWithGPS();">
  <img src= "#{ad.bucket_image}"/>
  <h2>#{ad.business_name} &middot #{ad.distance}m</h2>
  <p style="margin: 0 0 0px">#{ad.caption}</p>
@@ -39,7 +39,7 @@ Handlebars.registerHelper('createBucket', (ad)->
 
 Handlebars.registerHelper('createTag', (tag)->
 	new Handlebars.SafeString("""
-	<button onclick="getTagBucketWithGPS("#{tag}");" data-tag="#{tag}" style="line-height: 18px; min-height: 0px; margin-bottom: 3px;" class="button button-outline button-small button-positive">#{tag}</button>
+	<button disabled style="line-height: 18px; min-height: 0px; margin-bottom: 3px;" class="button button-outline button-small button-positive">#{tag}</button>
  """)
 )
 
@@ -181,4 +181,10 @@ onGPSTagSuccess = (position) ->
 getTag = (position)->
 	$.get("http:localhost:3000/tags/#{window.currentTag}", position, (data)->
  	fillBucket(data)
+ 	)
+
+getBusiness = (id)->
+	$.get("http:localhost:3000/business/#{id}", (data)->
+ 	window.localStorage.setItem("business", JSON.stringify(data))
+ 	getBusinessForm()
  	)

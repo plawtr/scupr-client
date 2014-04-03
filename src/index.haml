@@ -46,8 +46,6 @@
           {{#each ad.tags}}
           %button.button.button-outline.button-small.button-positive{onclick: "getTagBucketWithGPS();", "data-tag" => "{{this}}", style: "line-height: 18px; min-height: 0px; margin-bottom: 3px;"} {{this}}
           {{/each}}
-          -# %button.button.button-outline.button-small.button-positive{onclick: "getTagBucketWithGPS();", "data-tag" => "testingtag", style: "line-height: 18px; min-height: 0px; margin-bottom: 3px;"} testing tag
-          -# <button onclick="getTagBucketWithGPS("#{tag}");" data-tag="#{tag}" style="line-height: 18px; min-height: 0px; margin-bottom: 3px;" class="button button-outline button-small button-positive">#{tag}</button>  
         .item.item-image
           %img.full-mage{src: "{{ad.image}}"}
         .item.tabs.tabs-secondary.tabs-icon-left
@@ -65,7 +63,7 @@
           Get directions  
           %i.icon.ion-ios7-arrow-down
       %span#placeholder
-      %button.button.button-block.button-clear.button-stable.button-small{href:'#', onclick: ""} Are you the business owner?
+      %button.button.button-block.button-clear.button-stable.button-small{href:'#', onclick: "getBusiness({{ad.business_id}})"} Are you the business owner?
 
 
     %script{id: 'form-template', type: 'text/x-handlebars-template'}
