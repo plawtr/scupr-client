@@ -29,7 +29,7 @@ fillAd = (data)->
 
 Handlebars.registerHelper('createBucket', (ad)->
 	new Handlebars.SafeString("""
-<a class='item item-thumbnail-left item-text-wrap' data-id="#{ad.id}" href="#" onclick="getAdWithGPS();">
+<a class='item item-thumbnail-left' data-id="#{ad.id}" href="#" onclick="getAdWithGPS();">
  <img src= "#{ad.bucket_image}"/>
  <h2>#{ad.business_name} &middot #{ad.distance}m</h2>
  <p style="margin: 0 0 0px">#{ad.caption}</p>

@@ -12,13 +12,13 @@ onLoad = function() {
 };
 
 getBucket = function(position) {
-  return $.get("http:localhost:3000/ads", position, function(data) {
+  return $.get("http:scupr-staging.herokuapp.com/ads", position, function(data) {
     return fillBucket(data);
   });
 };
 
 getAd = function(position) {
-  return $.get("http:localhost:3000/ads/" + window.currentAdId, position, function(data) {
+  return $.get("http:scupr-staging.herokuapp.com/ads/" + window.currentAdId, position, function(data) {
     return fillAd(data);
   });
 };
@@ -40,7 +40,7 @@ fillAd = function(data) {
 };
 
 Handlebars.registerHelper('createBucket', function(ad) {
-  return new Handlebars.SafeString("<a class='item item-thumbnail-left item-text-wrap' data-id=\"" + ad.id + "\" href=\"#\" onclick=\"getAdWithGPS();\">\n <img src= \"" + ad.bucket_image + "\"/>\n <h2>" + ad.business_name + " &middot " + ad.distance + "m</h2>\n <p style=\"margin: 0 0 0px\">" + ad.caption + "</p>\n <p>" + ad.updated_ago + " &middot");
+  return new Handlebars.SafeString("<a class='item item-thumbnail-left' data-id=\"" + ad.id + "\" href=\"#\" onclick=\"getAdWithGPS();\">\n <img src= \"" + ad.bucket_image + "\"/>\n <h2>" + ad.business_name + " &middot " + ad.distance + "m</h2>\n <p style=\"margin: 0 0 0px\">" + ad.caption + "</p>\n <p>" + ad.updated_ago + " &middot");
 });
 
 Handlebars.registerHelper('createTag', function(tag) {
@@ -120,7 +120,7 @@ uploadPhoto = function(imageURI) {
   }
   options.params = params;
   ft = new FileTransfer();
-  return ft.upload(imageURI, encodeURI("http:localhost:3000/business/new"), onTransferSuccess, onTransferFail, options);
+  return ft.upload(imageURI, encodeURI("http:scupr-staging.herokuapp.com/business/new"), onTransferSuccess, onTransferFail, options);
 };
 
 onTransferSuccess = function(r) {
@@ -206,14 +206,13 @@ onGPSTagSuccess = function(position) {
 };
 
 getTag = function(position) {
-  return $.get("http:localhost:3000/tags/" + window.currentTag, position, function(data) {
+  return $.get("http:scupr-staging.herokuapp.com/tags/" + window.currentTag, position, function(data) {
     return fillBucket(data);
   });
 };
 
 getBusiness = function(id) {
-  return $.get("http:localhost:3000/business/" + id, function(data) {
-    console.log(data);
+  return $.get("http:scupr-staging.herokuapp.com/business/" + id, function(data) {
     window.localStorage.setItem("business", JSON.stringify(data));
     return getBusinessForm();
   });
