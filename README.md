@@ -1,22 +1,28 @@
 Phone app for Уonder!
 ================
 
-This iphone app was my final project at [Makers Academy]. 
-Together with Andrey Krahmal ([@plawtr]) we built Yonnder! in 10 very intentse days full of coding.
+This iOS app was my final project at [Makers Academy]. 
+Together with Andrey Krahmal ([@plawtr]) we built Уonder! in 10 intense days of coding.
 
 ##Technologies:
-- The app is built using Phonegap framework together with Ionic for styling.
+- The app is built using Phonegap/Cordova framework. 
+- The app utilises Ionic framework for styling.
 - It is written in Haml and Coffeescript (and compiled into HTML and Javascript).
-- Handlebars are used to produce the different templates.
+- Handlebars are used to produce and compile page templates.
 - It comunicates with the server ([scupr]) through JQuery requests getting and posting JSON data.
-- Provides directions by accessing Google maps API.
+- It accesses phone's GPS functionality.
+- Provides directions by accessing Google Maps API JavaScript.
+- It incorporates Stripe API for payments inside the app.
+- Integrates with iOS passbook and generates Store and Loyalty Cards
 
-##Plugins:
+##Phonegap/Cordova Apache and Third Party Plugins:
 - geolocation 
+- camera
+- file
+- dialogs
 - file-transfer
 - phonegapspinner
 - socialsharing
-
 
 Demo of the app:
 -----------------
