@@ -160,8 +160,15 @@ killMeNow = ()->
 	window.localStorage.setItem("business",  null)
 	getBucketWithGPS()
 
-getPassbook = ()-> 
-	Passbook.downloadPass('https://s3.amazonaws.com/scupr/pass/new.pkpass')
+getPass = (id)-> 
+	$.get("http:scupr-staging.herokuapp.com/pass/#{id}", (data)->
+ 	Passbook.downloadPass(data.pass_url)
+ 	)
+
+getCoupon = (id)-> 
+	$.get("http:scupr-staging.herokuapp.com/coupon/#{id}", (data)->
+ 	Passbook.downloadPass(data.pass_url)
+ 	)
 
 getStripeForm = ()->
 	event.preventDefault()

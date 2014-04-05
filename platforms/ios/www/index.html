@@ -17,6 +17,7 @@
     <script src='cordova.js' type='text/javascript'></script>
     <script src='js/jquery.js' type='text/javascript'></script>
     <script src='js/jquery-ui.js' type='text/javascript'></script>
+    <script src='js/fastclick.js' type='text/javascript'></script>
     <script src='js/handlebars.js' type='text/javascript'></script>
     <script src='js/ionic.bundle.js' type='text/javascript'></script>
     <script src='js/inputosaurus.js' type='text/javascript'></script>
@@ -52,9 +53,13 @@
             <i class='icon ion-ios7-telephone-outline'></i>
             Call
           </a>
-          <a class='tab-item' href='#' onclick='getPassbook();'>
+          <a class='tab-item' href='#' onclick='getPass({{ad.business_id}});'>
             <i class='icon ion-ios7-pricetag-outline'></i>
-            Loyalty Card
+            Rewards
+          </a>
+          <a class='tab-item' href='#' onclick='getCoupon({{ad.business_id}});'>
+            <i class='icon ion-ios7-cart-outline'></i>
+            Coupon
           </a>
           <a class='tab-item' href='#' onclick='shareAdSocially();'>
             <i class='icon ion-ios7-paperplane-outline'></i>
@@ -179,6 +184,11 @@
     <script src='js/stripe_local.js' type='text/javascript'></script>
     <script>
       document.addEventListener("deviceready", startApp, false);
+    </script>
+    <script>
+      window.addEventListener('load', function() {
+      FastClick.attach(document.body);
+      }, false);
     </script>
   </body>
 </html>

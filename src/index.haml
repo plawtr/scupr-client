@@ -13,7 +13,7 @@
     .bar.bar-header
       %button.button.button-icon.icon.ion-ios7-plus-empty{onclick: "getBusinessForm();"}       
       %h1.title{}><
-        %span.badge.badge-assertive{onclick: "getBucketWithGPS();"}
+        %span.badge.badge-assertive{onclick: "getBucketWithGPS();"} 
           Уonder
           %i{style:"font-family: georgia; font-style: italic; font-size: 110%;"}>< !
       %button.button.button-icon.icon.ion-ios7-refresh-empty{onclick: "getBucketWithGPS();"} 
@@ -22,6 +22,7 @@
     %script{type: "text/javascript", src: "cordova.js"}
     %script{type: "text/javascript", src: "js/jquery.js"}
     %script{type: "text/javascript", src: "js/jquery-ui.js"}
+    %script{type: "text/javascript", src: "js/fastclick.js"}
     %script{type: "text/javascript", src: "js/handlebars.js"}
     %script{type: "text/javascript", src: "js/ionic.bundle.js"}
     %script{type: "text/javascript", src: "js/inputosaurus.js"}
@@ -52,9 +53,12 @@
           %a.tab-item{href: "tel: {{ad.business_phone}}"}
             %i.icon.ion-ios7-telephone-outline
             Call
-          %a.tab-item{href: "#", onclick: "getPassbook();"}
+          %a.tab-item{href: "#", onclick: "getPass({{ad.business_id}});"}
             %i.icon.ion-ios7-pricetag-outline
-            Loyalty Card
+            Rewards
+          %a.tab-item{href: "#", onclick: "getCoupon({{ad.business_id}});"}
+            %i.icon.ion-ios7-cart-outline
+            Coupon
           %a.tab-item{href: "#", onclick: "shareAdSocially();"}
             %i.icon.ion-ios7-paperplane-outline
             Share
@@ -144,4 +148,8 @@
     %script{type: "text/javascript", src: "js/stripe_local.js"}
     %script
       document.addEventListener("deviceready", startApp, false);
+    %script  
+      window.addEventListener('load', function() {
+      FastClick.attach(document.body);
+      }, false);
     
