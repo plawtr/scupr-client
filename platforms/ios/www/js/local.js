@@ -40,11 +40,11 @@ fillAd = function(data) {
 };
 
 Handlebars.registerHelper('createBucket', function(ad) {
-  return new Handlebars.SafeString("<a class='item item-thumbnail-left' data-id=\"" + ad.id + "\" href=\"#\" onclick=\"getAdWithGPS();\">\n <img src= \"" + ad.bucket_image + "\"/>\n <h2>" + ad.business_name + " &middot " + ad.distance + "m</h2>\n <p style=\"margin: 0 0 0px\">" + ad.caption + "</p>\n <p>" + ad.updated_ago + " &middot");
+  return new Handlebars.SafeString("<a class='item bucket bucket-bg' style=\"background-image: url('" + ad.image + "'); background-position: center;\" data-id=\"" + ad.id + "\" href=\"#\" onclick=\"getAdWithGPS();\">\n	<div class=\"row no-padding\">\n		<div class=\"col col-50 bucket-name\"> " + ad.updated_ago + " </div>\n		<div class=\"col col-50 bucket-name\"> " + ad.business_name + " &middot " + ad.distance + "m</div>\n	</div>\n<div style=\"height: 65px;\"> </div>\n<p class=\"bucket-tag-container\">");
 });
 
 Handlebars.registerHelper('createTag', function(tag) {
-  return new Handlebars.SafeString("<button disabled style=\"line-height: 18px; min-height: 0px; margin-bottom: 3px;\" class=\"button button-outline button-small button-positive\">" + tag + "</button>");
+  return new Handlebars.SafeString("<button disabled class=\"button button-outline button-small button-dark bucket-tag\">" + tag + "</button>");
 });
 
 Handlebars.registerHelper('closeItem', function() {

@@ -5,6 +5,7 @@
     %meta{name: "format-detection", content: "telephone=no"}
     %meta{name: "viewport", content: "user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"}
     %link{rel: "stylesheet", type: "text/css", href: "css/ionic.css"}
+    %link{rel: "stylesheet", type: "text/css", href: "css/local.css"}
     %link{rel: "stylesheet", type: "text/css", href: "css/inputosaurus.css"}
     %title Уonder!
 
@@ -38,17 +39,19 @@
         {{/each}}
 
     %script{id: 'ad-template', type: 'text/x-handlebars-template'}     
-      .list.card
-        .item
-          %h2 {{ad.business_name}} &middot {{ad.distance}}m
-        .item.item-text-wrap
-          %p {{ad.caption}}
-        .item.item-text-wrap
-          {{#each ad.tags}}
-          %button.button.button-outline.button-small.button-positive{onclick: "getTagBucketWithGPS();", "data-tag" => "{{this}}", style: "line-height: 18px; min-height: 0px; margin-bottom: 3px;"} {{this}}
-          {{/each}}
-        .item.item-image
-          %img.full-mage{src: "{{ad.image}}"}
+      .list
+        .item.bucket.bucket-bg{style: "background-image: url('{{ad.image}}');"}
+          .row.no-padding
+            .col.col-50.bucket-name
+              {{ad.updated_ago}}
+            .col.col-50.bucket-name
+              {{ad.business_name}} &middot {{ad.distance}}m
+          %div{style:"height: 265px;"}
+          %p.bucket-tag-container
+            {{#each ad.tags}}
+            %button.button.button-outline.button-small.button-dark.bucket-tag{onclick: "getTagBucketWithGPS();", "data-tag" => "{{this}}"} {{this}}
+            {{/each}}
+          %p.bucket-caption.item.item-text-wrap {{ad.caption}}
         .item.tabs.tabs-secondary.tabs-icon-left
           %a.tab-item{href: "tel: {{ad.business_phone}}"}
             %i.icon.ion-ios7-telephone-outline

@@ -5,6 +5,7 @@
     <meta content='telephone=no' name='format-detection'>
     <meta content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi' name='viewport'>
     <link href='css/ionic.css' rel='stylesheet' type='text/css'>
+    <link href='css/local.css' rel='stylesheet' type='text/css'>
     <link href='css/inputosaurus.css' rel='stylesheet' type='text/css'>
     <title>Уonder!</title>
   </head>
@@ -33,20 +34,23 @@
       </div>
     </script>
     <script id='ad-template' type='text/x-handlebars-template'>
-      <div class='list card'>
-        <div class='item'>
-          <h2>{{ad.business_name}} &middot {{ad.distance}}m</h2>
-        </div>
-        <div class='item item-text-wrap'>
-          <p>{{ad.caption}}</p>
-        </div>
-        <div class='item item-text-wrap'>
-          {{#each ad.tags}}
-          <button class='button button-outline button-small button-positive' data-tag='{{this}}' onclick='getTagBucketWithGPS();' style='line-height: 18px; min-height: 0px; margin-bottom: 3px;'>{{this}}</button>
-          {{/each}}
-        </div>
-        <div class='item item-image'>
-          <img class='full-mage' src='{{ad.image}}'>
+      <div class='list'>
+        <div class='item bucket bucket-bg' style="background-image: url('{{ad.image}}');">
+          <div class='row no-padding'>
+            <div class='col col-50 bucket-name'>
+              {{ad.updated_ago}}
+            </div>
+            <div class='col col-50 bucket-name'>
+              {{ad.business_name}} &middot {{ad.distance}}m
+            </div>
+          </div>
+          <div style='height: 265px;'></div>
+          <p class='bucket-tag-container'>
+            {{#each ad.tags}}
+            <button class='button button-outline button-small button-dark bucket-tag' data-tag='{{this}}' onclick='getTagBucketWithGPS();'>{{this}}</button>
+            {{/each}}
+          </p>
+          <p class='bucket-caption item item-text-wrap'>{{ad.caption}}</p>
         </div>
         <div class='item tabs tabs-secondary tabs-icon-left'>
           <a class='tab-item' href='tel: {{ad.business_phone}}'>

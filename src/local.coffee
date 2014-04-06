@@ -29,17 +29,19 @@ fillAd = (data)->
 
 Handlebars.registerHelper('createBucket', (ad)->
 	new Handlebars.SafeString("""
-<a class='item item-thumbnail-left' data-id="#{ad.id}" href="#" onclick="getAdWithGPS();">
- <img src= "#{ad.bucket_image}"/>
- <h2>#{ad.business_name} &middot #{ad.distance}m</h2>
- <p style="margin: 0 0 0px">#{ad.caption}</p>
- <p>#{ad.updated_ago} &middot
+ 	<a class='item bucket bucket-bg' style="background-image: url('#{ad.image}'); background-position: center;" data-id="#{ad.id}" href="#" onclick="getAdWithGPS();">
+ 		<div class="row no-padding">
+ 			<div class="col col-50 bucket-name"> #{ad.updated_ago} </div>
+ 			<div class="col col-50 bucket-name"> #{ad.business_name} &middot #{ad.distance}m</div>
+ 		</div>
+ 	<div style="height: 65px;"> </div>
+ 	<p class="bucket-tag-container">
  """)
 )
 
 Handlebars.registerHelper('createTag', (tag)->
 	new Handlebars.SafeString("""
-	<button disabled style="line-height: 18px; min-height: 0px; margin-bottom: 3px;" class="button button-outline button-small button-positive">#{tag}</button>
+	<button disabled class="button button-outline button-small button-dark bucket-tag">#{tag}</button>
  """)
 )
 
