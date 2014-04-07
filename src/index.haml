@@ -49,29 +49,24 @@
           %div{style:"height: 265px;"}
           %p.bucket-tag-container
             {{#each ad.tags}}
-            %button.button.button-outline.button-small.button-dark.bucket-tag{onclick: "getTagBucketWithGPS();", "data-tag" => "{{this}}"} {{this}}
+            %button.button.button-outline.button-small.button-stable.bucket-tag{onclick: "getTagBucketWithGPS();", "data-tag" => "{{this}}"} {{this}}
             {{/each}}
-          %p.bucket-caption.item.item-text-wrap{id: "business-caption"} {{ad.caption}}
-        .item.tabs.tabs-secondary.tabs-icon-left
-          %a.tab-item{href: "tel: {{ad.business_phone}}"}
-            %i.icon.ion-ios7-telephone-outline
-            Call
-          %a.tab-item{href: "#", onclick: "getPass({{ad.business_id}});"}
-            %i.icon.ion-ios7-pricetag-outline
-            Rewards
-          %a.tab-item{href: "#", onclick: "getCoupon({{ad.business_id}});"}
-            %i.icon.ion-ios7-cart-outline
-            Coupon
-          %a.tab-item{href: "#", onclick: "shareAdSocially();"}
-            %i.icon.ion-ios7-paperplane-outline
-            Share
-        %a.item.item-icon-left.assertive.item-icon-right{href:'#', onclick: "getMapWithGPS();", "data-lng" => "{{ad.business_GPS.lng}}", "data-lat" => "{{ad.business_GPS.lat}}"}
-          %i.icon.ion-ios7-navigate-outline
-          Get directions  
-          %i.icon.ion-ios7-arrow-down
+          %p.item.item-text-wrap.bucket-caption{id: "business-caption"} 
+            {{ad.caption}}
+          .row.no-padding
+            .button-bar.bucket-name
+              %a.button.button-clear{href: "tel: {{ad.business_phone}}"}
+                %i.icon.ion-ios7-telephone-outline
+              %a.button.button-clear{href: "#", onclick: "getPass({{ad.business_id}});"}
+                %i.icon.ion-ios7-pricetag-outline
+              %a.button.button-clear{href: "#", onclick: "getCoupon({{ad.business_id}});"}
+                %i.icon.ion-ios7-cart-outline
+              %a.button.button-clear{href: "#", onclick: "shareAdSocially();"}
+                %i.icon.ion-ios7-paperplane-outline
+              %a.button.button-clear.button-icon-left.assertive.button-icon-right{href:'#', onclick: "getMapWithGPS();", "data-lng" => "{{ad.business_GPS.lng}}", "data-lat" => "{{ad.business_GPS.lat}}"}
+                %i.icon.ion-ios7-navigate-outline
       %span#placeholder
       %button.button.button-block.button-clear.button-stable.button-small{href:'#', onclick: "getBusiness({{ad.business_id}})"} Are you the business owner?
-
 
     %script{id: 'form-template', type: 'text/x-handlebars-template'}
       %form{id: 'new-business'}

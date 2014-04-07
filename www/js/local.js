@@ -44,7 +44,7 @@ Handlebars.registerHelper('createBucket', function(ad) {
 });
 
 Handlebars.registerHelper('createTag', function(tag) {
-  return new Handlebars.SafeString("<button disabled class=\"button button-outline button-small button-dark bucket-tag\">" + tag + "</button>");
+  return new Handlebars.SafeString("<button disabled class=\"button button-outline button-small button-stable bucket-tag\">" + tag + "</button>");
 });
 
 Handlebars.registerHelper('closeItem', function() {

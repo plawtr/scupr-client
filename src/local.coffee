@@ -41,7 +41,7 @@ Handlebars.registerHelper('createBucket', (ad)->
 
 Handlebars.registerHelper('createTag', (tag)->
 	new Handlebars.SafeString("""
-	<button disabled class="button button-outline button-small button-dark bucket-tag">#{tag}</button>
+	<button disabled class="button button-outline button-small button-stable bucket-tag">#{tag}</button>
  """)
 )
 

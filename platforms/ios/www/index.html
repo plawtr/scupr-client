@@ -47,34 +47,32 @@
           <div style='height: 265px;'></div>
           <p class='bucket-tag-container'>
             {{#each ad.tags}}
-            <button class='button button-outline button-small button-dark bucket-tag' data-tag='{{this}}' onclick='getTagBucketWithGPS();'>{{this}}</button>
+            <button class='button button-outline button-small button-stable bucket-tag' data-tag='{{this}}' onclick='getTagBucketWithGPS();'>{{this}}</button>
             {{/each}}
           </p>
-          <p class='bucket-caption item item-text-wrap' id='business-caption'>{{ad.caption}}</p>
+          <p class='item item-text-wrap bucket-caption' id='business-caption'>
+            {{ad.caption}}
+          </p>
+          <div class='row no-padding'>
+            <div class='button-bar bucket-name'>
+              <a class='button button-clear' href='tel: {{ad.business_phone}}'>
+                <i class='icon ion-ios7-telephone-outline'></i>
+              </a>
+              <a class='button button-clear' href='#' onclick='getPass({{ad.business_id}});'>
+                <i class='icon ion-ios7-pricetag-outline'></i>
+              </a>
+              <a class='button button-clear' href='#' onclick='getCoupon({{ad.business_id}});'>
+                <i class='icon ion-ios7-cart-outline'></i>
+              </a>
+              <a class='button button-clear' href='#' onclick='shareAdSocially();'>
+                <i class='icon ion-ios7-paperplane-outline'></i>
+              </a>
+              <a class='button button-clear button-icon-left assertive button-icon-right' data-lat='{{ad.business_GPS.lat}}' data-lng='{{ad.business_GPS.lng}}' href='#' onclick='getMapWithGPS();'>
+                <i class='icon ion-ios7-navigate-outline'></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class='item tabs tabs-secondary tabs-icon-left'>
-          <a class='tab-item' href='tel: {{ad.business_phone}}'>
-            <i class='icon ion-ios7-telephone-outline'></i>
-            Call
-          </a>
-          <a class='tab-item' href='#' onclick='getPass({{ad.business_id}});'>
-            <i class='icon ion-ios7-pricetag-outline'></i>
-            Rewards
-          </a>
-          <a class='tab-item' href='#' onclick='getCoupon({{ad.business_id}});'>
-            <i class='icon ion-ios7-cart-outline'></i>
-            Coupon
-          </a>
-          <a class='tab-item' href='#' onclick='shareAdSocially();'>
-            <i class='icon ion-ios7-paperplane-outline'></i>
-            Share
-          </a>
-        </div>
-        <a class='item item-icon-left assertive item-icon-right' data-lat='{{ad.business_GPS.lat}}' data-lng='{{ad.business_GPS.lng}}' href='#' onclick='getMapWithGPS();'>
-          <i class='icon ion-ios7-navigate-outline'></i>
-          Get directions
-          <i class='icon ion-ios7-arrow-down'></i>
-        </a>
       </div>
       <span id='placeholder'></span>
       <button class='button button-block button-clear button-stable button-small' href='#' onclick='getBusiness({{ad.business_id}})'>Are you the business owner?</button>
