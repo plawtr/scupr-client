@@ -40,7 +40,7 @@
   font-size: 14px;
   padding: 5px;
   margin: 0px;
-  white-space: normal;
+  white-space: normal !important;
 }
 
 .no-padding {

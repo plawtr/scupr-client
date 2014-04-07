@@ -44,14 +44,14 @@
           .row.no-padding
             .col.col-50.bucket-name
               {{ad.updated_ago}}
-            .col.col-50.bucket-name
+            .col.col-50.bucket-name{id: "business-info"}
               {{ad.business_name}} &middot {{ad.distance}}m
           %div{style:"height: 265px;"}
           %p.bucket-tag-container
             {{#each ad.tags}}
             %button.button.button-outline.button-small.button-dark.bucket-tag{onclick: "getTagBucketWithGPS();", "data-tag" => "{{this}}"} {{this}}
             {{/each}}
-          %p.bucket-caption.item.item-text-wrap {{ad.caption}}
+          %p.bucket-caption.item.item-text-wrap{id: "business-caption"} {{ad.caption}}
         .item.tabs.tabs-secondary.tabs-icon-left
           %a.tab-item{href: "tel: {{ad.business_phone}}"}
             %i.icon.ion-ios7-telephone-outline
@@ -151,8 +151,4 @@
     %script{type: "text/javascript", src: "js/stripe_local.js"}
     %script
       document.addEventListener("deviceready", startApp, false);
-    %script  
-      window.addEventListener('load', function() {
-      FastClick.attach(document.body);
-      }, false);
     

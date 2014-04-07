@@ -120,7 +120,10 @@ onTransferFail = (error)->
 	console.log("upload error target " + error.target)
 
 shareAdSocially = ()->
-	window.plugins.socialsharing.share("Hey, check out #{$('h2')[0].textContent} away from me right now: #{$('p')[0].textContent} #Уonder!", 'Уonder!', $('img')[0].src)
+	window.plugins.socialsharing.share(
+		"Hey, check out #{$('div#business-info')[0].textContent.trim()} away from me right now: #{$('p#business-caption')[0].textContent.trim()} #Уonder!", 'Уonder!',
+		$('.bucket-bg')[0].style.backgroundImage.slice(4, -1)
+	)
 
 getBusinessForm = ()->
 	navigator.geolocation.getCurrentPosition((position)->
