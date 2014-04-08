@@ -233,6 +233,13 @@ module.exports = [
         "clobbers": [
             "window.spinnerplugin"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device/www/device.js",
+        "id": "org.apache.cordova.device.device",
+        "clobbers": [
+            "device"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -245,7 +252,8 @@ module.exports.metadata =
     "nl.x-services.plugins.socialsharing": "4.0.7",
     "org.apache.cordova.dialogs": "0.2.6",
     "com.passslot.cordova.plugin.passbook": "0.1.0",
-    "it.mobimentum.phonegapspinnerplugin": "1.0.3"
+    "it.mobimentum.phonegapspinnerplugin": "1.0.3",
+    "org.apache.cordova.device": "0.2.8"
 }
 // BOTTOM OF METADATA
 });

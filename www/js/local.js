@@ -157,6 +157,7 @@ getBusinessForm = function() {
       };
       noEmptyFieldsOrButtons = true;
     }
+    cookie.business.uuid = device.uuid;
     source = $("#form-template").html();
     template = Handlebars.compile(source);
     $('#bucket').html(template(cookie));
