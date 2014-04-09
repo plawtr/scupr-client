@@ -16,12 +16,16 @@ getAd = (position) ->
  	fillAd(data))
 
 fillBucket = (data)->
+	$('.ion-ios7-arrow-left').toggleClass("ion-ios7-arrow-left ion-ios7-refresh-empty")
+
 	source = $("#bucket-template").html()
 	template = Handlebars.compile(source)
 	$('#bucket').html(template(roundDistanceForAds(data)))
 	window.scrollTo(0,0)
 
 fillAd = (data)->
+	$('.ion-ios7-refresh-empty').toggleClass("ion-ios7-refresh-empty ion-ios7-arrow-left")
+
 	source = $("#ad-template").html()
 	template = Handlebars.compile(source)
 	$('#bucket').html(template(roundDistanceOfAd(data)))
@@ -140,7 +144,7 @@ getBusinessForm = ()->
 			}
 			noEmptyFieldsOrButtons = true
 			
-		cookie.business.uuid =  device.uuid
+		cookie.business.uuid = device.uuid
 		source = $("#form-template").html()
 		template = Handlebars.compile(source)
 		$('#bucket').html(template(cookie))

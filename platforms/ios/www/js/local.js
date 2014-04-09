@@ -25,6 +25,7 @@ getAd = function(position) {
 
 fillBucket = function(data) {
   var source, template;
+  $('.ion-ios7-arrow-left').toggleClass("ion-ios7-arrow-left ion-ios7-refresh-empty");
   source = $("#bucket-template").html();
   template = Handlebars.compile(source);
   $('#bucket').html(template(roundDistanceForAds(data)));
@@ -33,6 +34,7 @@ fillBucket = function(data) {
 
 fillAd = function(data) {
   var source, template;
+  $('.ion-ios7-refresh-empty').toggleClass("ion-ios7-refresh-empty ion-ios7-arrow-left");
   source = $("#ad-template").html();
   template = Handlebars.compile(source);
   $('#bucket').html(template(roundDistanceOfAd(data)));
