@@ -212,8 +212,12 @@ getBusinessFromCookie = ()->
 	if cookie == null
 		getBusinessForm()
 	else
-		$.get("http:scupr-staging.herokuapp.com/business/#{cookie.business.id}", (data)->
- 		window.localStorage.setItem("business", JSON.stringify(data))
- 		getBusinessForm()
+		$.get("http:scupr-staging.herokuapp.com/business/#{cookie.business.id}/#{device.uuid}", (data, status)->
+ 		if status == "200"
+ 			window.localStorage.setItem("business", JSON.stringify(data))
+ 			getBusinessForm()
+ 		else
+ 			cookie = null
+ 			getBusinessForm()
  		)
 
