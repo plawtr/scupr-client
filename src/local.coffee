@@ -143,7 +143,8 @@ getBusinessForm = ()->
 				}
 			}
 			noEmptyFieldsOrButtons = true
-			
+		
+
 		cookie.business.uuid = device.uuid
 		source = $("#form-template").html()
 		template = Handlebars.compile(source)
@@ -205,3 +206,14 @@ getBusiness = (id)->
  	window.localStorage.setItem("business", JSON.stringify(data))
  	getBusinessForm()
  	)
+
+getBusinessFromCookie = ()->
+	cookie = JSON.parse(window.localStorage.getItem("business"))
+	if cookie == null
+		getBusinessForm()
+	else
+		$.get("http:scupr-staging.herokuapp.com/business/#{cookie.business.id}", (data)->
+ 		window.localStorage.setItem("business", JSON.stringify(data))
+ 		getBusinessForm()
+ 		)
+
